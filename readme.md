@@ -14,15 +14,15 @@ through the Inter-Blockchain Communication (IBC) Protocol to rapidly grow the st
 - [`join testnet`](./docs/guaid/join-testnet.md)
 - [`your own testnet`](./docs/guaid/your-own-testnet.md)
 
-// ## Genesis
+## Genesis
 
-// If you are looking for historical genesis files and other data
+If you are looking for historical genesis files and other data
 
-// - [`sojahub/mainnet`](https://github.com/sojahub/network/tree/main/mainnets)
-// - [`sojahub/testnet`](https://github.com/sojahub/network/tree/main/testnets)
+- [`sojahub/mainnet`](https://github.com/sojahub/network/tree/main/mainnets)
+- [`sojahub/testnet`](https://github.com/sojahub/network/tree/main/testnets)
 
 
-// ## Chain Upgrades
+## Chain Upgrades
 
-// - **v030** _(v0.3.0)_ - Block 2626590 - (2023-02-09 19:57:18)
-//  - [Upgrade Instruction](https://github.com/sojahub/sojahub/tree/main/app/upgrades/v030)
+- **v030** _(v0.3.0)_ - Block 2626590 - (2023-02-09 19:57:18)
+ - [Upgrade Instruction](https://github.com/sojahub/sojahub/tree/main/app/upgrades/v030)
