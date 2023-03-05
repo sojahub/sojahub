@@ -1,6 +1,6 @@
-# SoJaHub
+# SojaHub
 
-**SoJaHub** is a blockchain built using [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) and Tendermint and aims to provide liquid staking solutions for assets
+**SojaHub** is a blockchain built using [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) and Tendermint and aims to provide liquid staking solutions for assets
 through the Inter-Blockchain Communication (IBC) Protocol to rapidly grow the staking industry.
 
 |  |  |  |  |
