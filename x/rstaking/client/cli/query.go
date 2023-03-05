@@ -10,7 +10,7 @@ import (
 	// "github.com/cosmos/cosmos-sdk/client/flags"
 	// sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

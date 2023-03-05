@@ -541,16 +541,16 @@ func (m *MsgRmRValidatorResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgRmRValidatorResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgInitRValidator)(nil), "stafihub.stafihub.rvalidator.MsgInitRValidator")
-	proto.RegisterType((*MsgInitRValidatorResponse)(nil), "stafihub.stafihub.rvalidator.MsgInitRValidatorResponse")
-	proto.RegisterType((*MsgSetCycleSeconds)(nil), "stafihub.stafihub.rvalidator.MsgSetCycleSeconds")
-	proto.RegisterType((*MsgSetCycleSecondsResponse)(nil), "stafihub.stafihub.rvalidator.MsgSetCycleSecondsResponse")
-	proto.RegisterType((*MsgSetShuffleSeconds)(nil), "stafihub.stafihub.rvalidator.MsgSetShuffleSeconds")
-	proto.RegisterType((*MsgSetShuffleSecondsResponse)(nil), "stafihub.stafihub.rvalidator.MsgSetShuffleSecondsResponse")
-	proto.RegisterType((*MsgAddRValidator)(nil), "stafihub.stafihub.rvalidator.MsgAddRValidator")
-	proto.RegisterType((*MsgAddRValidatorResponse)(nil), "stafihub.stafihub.rvalidator.MsgAddRValidatorResponse")
-	proto.RegisterType((*MsgRmRValidator)(nil), "stafihub.stafihub.rvalidator.MsgRmRValidator")
-	proto.RegisterType((*MsgRmRValidatorResponse)(nil), "stafihub.stafihub.rvalidator.MsgRmRValidatorResponse")
+	proto.RegisterType((*MsgInitRValidator)(nil), "sojahub.sojahub.rvalidator.MsgInitRValidator")
+	proto.RegisterType((*MsgInitRValidatorResponse)(nil), "sojahub.sojahub.rvalidator.MsgInitRValidatorResponse")
+	proto.RegisterType((*MsgSetCycleSeconds)(nil), "sojahub.sojahub.rvalidator.MsgSetCycleSeconds")
+	proto.RegisterType((*MsgSetCycleSecondsResponse)(nil), "sojahub.sojahub.rvalidator.MsgSetCycleSecondsResponse")
+	proto.RegisterType((*MsgSetShuffleSeconds)(nil), "sojahub.sojahub.rvalidator.MsgSetShuffleSeconds")
+	proto.RegisterType((*MsgSetShuffleSecondsResponse)(nil), "sojahub.sojahub.rvalidator.MsgSetShuffleSecondsResponse")
+	proto.RegisterType((*MsgAddRValidator)(nil), "sojahub.sojahub.rvalidator.MsgAddRValidator")
+	proto.RegisterType((*MsgAddRValidatorResponse)(nil), "sojahub.sojahub.rvalidator.MsgAddRValidatorResponse")
+	proto.RegisterType((*MsgRmRValidator)(nil), "sojahub.sojahub.rvalidator.MsgRmRValidator")
+	proto.RegisterType((*MsgRmRValidatorResponse)(nil), "sojahub.sojahub.rvalidator.MsgRmRValidatorResponse")
 }
 
 func init() { proto.RegisterFile("rvalidator/tx.proto", fileDescriptor_27b98f1fac7fb431) }
@@ -618,7 +618,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) InitRValidator(ctx context.Context, in *MsgInitRValidator, opts ...grpc.CallOption) (*MsgInitRValidatorResponse, error) {
 	out := new(MsgInitRValidatorResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvalidator.Msg/InitRValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvalidator.Msg/InitRValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -627,7 +627,7 @@ func (c *msgClient) InitRValidator(ctx context.Context, in *MsgInitRValidator, o
 
 func (c *msgClient) SetCycleSeconds(ctx context.Context, in *MsgSetCycleSeconds, opts ...grpc.CallOption) (*MsgSetCycleSecondsResponse, error) {
 	out := new(MsgSetCycleSecondsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvalidator.Msg/SetCycleSeconds", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvalidator.Msg/SetCycleSeconds", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -636,7 +636,7 @@ func (c *msgClient) SetCycleSeconds(ctx context.Context, in *MsgSetCycleSeconds,
 
 func (c *msgClient) SetShuffleSeconds(ctx context.Context, in *MsgSetShuffleSeconds, opts ...grpc.CallOption) (*MsgSetShuffleSecondsResponse, error) {
 	out := new(MsgSetShuffleSecondsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvalidator.Msg/SetShuffleSeconds", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvalidator.Msg/SetShuffleSeconds", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -645,7 +645,7 @@ func (c *msgClient) SetShuffleSeconds(ctx context.Context, in *MsgSetShuffleSeco
 
 func (c *msgClient) AddRValidator(ctx context.Context, in *MsgAddRValidator, opts ...grpc.CallOption) (*MsgAddRValidatorResponse, error) {
 	out := new(MsgAddRValidatorResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvalidator.Msg/AddRValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvalidator.Msg/AddRValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -654,7 +654,7 @@ func (c *msgClient) AddRValidator(ctx context.Context, in *MsgAddRValidator, opt
 
 func (c *msgClient) RmRValidator(ctx context.Context, in *MsgRmRValidator, opts ...grpc.CallOption) (*MsgRmRValidatorResponse, error) {
 	out := new(MsgRmRValidatorResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvalidator.Msg/RmRValidator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvalidator.Msg/RmRValidator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -704,7 +704,7 @@ func _Msg_InitRValidator_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvalidator.Msg/InitRValidator",
+		FullMethod: "/sojahub.sojahub.rvalidator.Msg/InitRValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).InitRValidator(ctx, req.(*MsgInitRValidator))
@@ -722,7 +722,7 @@ func _Msg_SetCycleSeconds_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvalidator.Msg/SetCycleSeconds",
+		FullMethod: "/sojahub.sojahub.rvalidator.Msg/SetCycleSeconds",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetCycleSeconds(ctx, req.(*MsgSetCycleSeconds))
@@ -740,7 +740,7 @@ func _Msg_SetShuffleSeconds_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvalidator.Msg/SetShuffleSeconds",
+		FullMethod: "/sojahub.sojahub.rvalidator.Msg/SetShuffleSeconds",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetShuffleSeconds(ctx, req.(*MsgSetShuffleSeconds))
@@ -758,7 +758,7 @@ func _Msg_AddRValidator_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvalidator.Msg/AddRValidator",
+		FullMethod: "/sojahub.sojahub.rvalidator.Msg/AddRValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddRValidator(ctx, req.(*MsgAddRValidator))
@@ -776,7 +776,7 @@ func _Msg_RmRValidator_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvalidator.Msg/RmRValidator",
+		FullMethod: "/sojahub.sojahub.rvalidator.Msg/RmRValidator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmRValidator(ctx, req.(*MsgRmRValidator))
@@ -785,7 +785,7 @@ func _Msg_RmRValidator_Handler(srv interface{}, ctx context.Context, dec func(in
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rvalidator.Msg",
+	ServiceName: "sojahub.sojahub.rvalidator.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

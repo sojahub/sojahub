@@ -450,17 +450,17 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "params"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "params"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_InflationBase_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "inflation_base"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_InflationBase_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "inflation_base"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ValidatorWhitelist_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "validator_whitelist"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ValidatorWhitelist_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "validator_whitelist"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ValidatorWhitelistSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "validator_whitelist_switch"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ValidatorWhitelistSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "validator_whitelist_switch"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_DelegatorWhitelist_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "delegator_whitelist"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_DelegatorWhitelist_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "delegator_whitelist"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_DelegatorWhitelistSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "rstaking", "delegator_whitelist_switch"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_DelegatorWhitelistSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"sojahub", "rstaking", "delegator_whitelist_switch"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

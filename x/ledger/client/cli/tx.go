@@ -12,7 +12,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/sojahub/sojahub/x/ledger/types"
 )
 
 var (

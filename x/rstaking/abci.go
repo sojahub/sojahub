@@ -5,8 +5,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rstaking/keeper"
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/keeper"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 )
 
 func BeginBlocker(ctx sdk.Context, k keeper.Keeper, mintKeeper types.MintKeeper) {

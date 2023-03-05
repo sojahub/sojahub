@@ -4,7 +4,7 @@
     "lockedBlocks": 10,
     "tokenRewardInfos": [
         {
-            "denom": "ufis",
+            "denom": "ufury",
             "rewardRate": "0.001",
             "totalRewardAmount": "100000000",
             "userLimit": "100"

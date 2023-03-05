@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rdex/types"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/sojahub/sojahub/x/rdex/types"
+	sudotypes "github.com/sojahub/sojahub/x/sudo/types"
 )
 
 func (k msgServer) RmProvider(goCtx context.Context, msg *types.MsgRmProvider) (*types.MsgRmProviderResponse, error) {

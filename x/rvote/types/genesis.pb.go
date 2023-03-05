@@ -69,7 +69,7 @@ func (m *GenesisState) GetProposalLife() int64 {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.rvote.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "sojahub.sojahub.rvote.GenesisState")
 }
 
 func init() { proto.RegisterFile("rvote/genesis.proto", fileDescriptor_06b54766f7470713) }

@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/sojahub/sojahub/x/bridge/types"
 )
 
 var _ = strconv.Itoa(0)

@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/relayers/keeper"
-	"github.com/stafihub/stafihub/x/relayers/types"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/x/relayers/keeper"
+	"github.com/sojahub/sojahub/x/relayers/types"
+	sudotypes "github.com/sojahub/sojahub/x/sudo/types"
 	"github.com/stretchr/testify/require"
 )
 

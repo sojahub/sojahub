@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/stafihub/stafihub/x/ledger/client/cli"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/sojahub/sojahub/x/ledger/client/cli"
+	"github.com/sojahub/sojahub/x/ledger/keeper"
+	"github.com/sojahub/sojahub/x/ledger/types"
 )
 
 var (

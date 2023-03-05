@@ -3,9 +3,9 @@ package relayers_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/x/relayers"
-	"github.com/stafihub/stafihub/x/relayers/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/x/relayers"
+	"github.com/sojahub/sojahub/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 

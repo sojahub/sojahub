@@ -1,7 +1,7 @@
 {
     "rewardPoolList": [
         {
-            "rewardTokenDenom": "ufis",
+            "rewardTokenDenom": "ufury",
             "totalRewardAmount": "300",
             "rewardPerSecond": "1",
             "startTimestamp": 3

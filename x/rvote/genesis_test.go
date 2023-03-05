@@ -3,9 +3,9 @@ package rvote_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/x/rvote"
-	"github.com/stafihub/stafihub/x/rvote/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/x/rvote"
+	"github.com/sojahub/sojahub/x/rvote/types"
 	"github.com/stretchr/testify/require"
 )
 

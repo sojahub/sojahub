@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	testkeeper "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/x/bridge/types"
 	"github.com/stretchr/testify/require"
 )
 

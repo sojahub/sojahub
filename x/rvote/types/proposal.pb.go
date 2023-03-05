@@ -56,7 +56,7 @@ func (ProposalStatus) EnumDescriptor() ([]byte, []int) {
 
 type Proposal struct {
 	Content     *types.Any     `protobuf:"bytes,1,opt,name=content,proto3" json:"content,omitempty"`
-	Status      ProposalStatus `protobuf:"varint,2,opt,name=status,proto3,enum=stafihub.stafihub.rvote.ProposalStatus" json:"status,omitempty" yaml:"prop_status"`
+	Status      ProposalStatus `protobuf:"varint,2,opt,name=status,proto3,enum=sojahub.sojahub.rvote.ProposalStatus" json:"status,omitempty" yaml:"prop_status"`
 	Voted       []string       `protobuf:"bytes,3,rep,name=voted,proto3" json:"voted,omitempty" yaml:"voted"`
 	StartBlock  int64          `protobuf:"varint,4,opt,name=startBlock,proto3" json:"startBlock,omitempty" yaml:"start_block"`
 	ExpireBlock int64          `protobuf:"varint,5,opt,name=expireBlock,proto3" json:"expireBlock,omitempty" yaml:"expire_block"`
@@ -95,8 +95,8 @@ func (m *Proposal) XXX_DiscardUnknown() {
 var xxx_messageInfo_Proposal proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterEnum("stafihub.stafihub.rvote.ProposalStatus", ProposalStatus_name, ProposalStatus_value)
-	proto.RegisterType((*Proposal)(nil), "stafihub.stafihub.rvote.Proposal")
+	proto.RegisterEnum("sojahub.sojahub.rvote.ProposalStatus", ProposalStatus_name, ProposalStatus_value)
+	proto.RegisterType((*Proposal)(nil), "sojahub.sojahub.rvote.Proposal")
 }
 
 func init() { proto.RegisterFile("rvote/proposal.proto", fileDescriptor_a18424b8936b52ae) }

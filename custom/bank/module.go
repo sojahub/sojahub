@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/bank"
 	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/sojahub/sojahub/utils"
 )
 
 var (
@@ -24,55 +24,55 @@ type AppModuleBasic struct {
 func (am AppModuleBasic) DefaultGenesis(cdc codec.JSONCodec) json.RawMessage {
 	defaultGenesisState := types.DefaultGenesisState()
 	// {
-	//     "description": "The native staking token of the StaFi Hub",
+	//     "description": "The native staking token of the SoJa Hub",
 	//     "denom_units": [
 	//         {
-	//             "denom": "ufis",
+	//             "denom": "ufury",
 	//             "exponent": 0,
 	//             "aliases": [
-	//                 "microfis"
+	//                 "microfury"
 	//             ]
 	//         },
 	//         {
-	//             "denom": "mfis",
+	//             "denom": "mfury",
 	//             "exponent": 3,
 	//             "aliases": [
-	//               "millifis"
+	//               "millifury"
 	//             ]
 	//         },
 	//         {
-	//             "denom": "fis",
+	//             "denom": "fury",
 	//             "exponent": 6
 	//         }
 	//     ],
-	//     "base": "ufis",
-	//     "display": "fis",
-	//     "name": "FIS",
-	//     "symbol": "FIS"
+	//     "base": "ufury",
+	//     "display": "fury",
+	//     "name": "FURY",
+	//     "symbol": "FURY"
 	// }
 	defaultGenesisState.DenomMetadata = append(defaultGenesisState.DenomMetadata,
 		types.Metadata{
-			Description: "The native staking token of the StaFi Hub",
+			Description: "The native staking token of the SoJa Hub",
 			DenomUnits: []*types.DenomUnit{
 				{
-					Denom:    utils.FisDenom,
+					Denom:    utils.FuryDenom,
 					Exponent: 0,
-					Aliases:  []string{"microfis"},
+					Aliases:  []string{"microfury"},
 				},
 				{
-					Denom:    "mfis",
+					Denom:    "mfury",
 					Exponent: 3,
-					Aliases:  []string{"millifis"},
+					Aliases:  []string{"millifury"},
 				},
 				{
-					Denom:    "fis",
+					Denom:    "fury",
 					Exponent: 6,
 				},
 			},
-			Base:    utils.FisDenom,
-			Display: "fis",
-			Name:    "FIS",
-			Symbol:  "FIS",
+			Base:    utils.FuryDenom,
+			Display: "fury",
+			Name:    "FURY",
+			Symbol:  "FURY",
 		},
 	)
 	return cdc.MustMarshalJSON(defaultGenesisState)

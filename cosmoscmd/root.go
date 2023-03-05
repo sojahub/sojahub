@@ -136,7 +136,7 @@ func NewRootCmd(
 
 	rootCmd := &cobra.Command{
 		Use:   appName + "d",
-		Short: "StafiHub App",
+		Short: "SojaHub App",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			initClientCtx, err := client.ReadPersistentCommandFlags(initClientCtx, cmd.Flags())
 			if err != nil {
@@ -431,7 +431,7 @@ func initAppConfig() (string, interface{}) {
 	//   own app.toml to override, or use this default value.
 	//
 	// In simapp, we set the min gas prices to 0.
-	srvCfg.MinGasPrices = "0ufis"
+	srvCfg.MinGasPrices = "0ufury"
 
 	customAppConfig := CustomAppConfig{
 		Config: *srvCfg,
@@ -465,7 +465,7 @@ func ModuleAddrCmd() *cobra.Command {
 
 Example:
 $ %s debug module-addr rdex
-			`, "stafihubd"),
+			`, "sojahubd"),
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 

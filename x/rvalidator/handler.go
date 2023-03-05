@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/x/rvalidator/keeper"
-	"github.com/stafihub/stafihub/x/rvalidator/types"
+	"github.com/sojahub/sojahub/x/rvalidator/keeper"
+	"github.com/sojahub/sojahub/x/rvalidator/types"
 )
 
 // NewHandler ...

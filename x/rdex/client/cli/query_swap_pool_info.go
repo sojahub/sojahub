@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/rdex/types"
+	"github.com/sojahub/sojahub/x/rdex/types"
 )
 
 var _ = strconv.Itoa(0)

@@ -157,7 +157,7 @@ var xxx_messageInfo_MsgSubmitProposal proto.InternalMessageInfo
 
 type MsgSubmitProposalResponse struct {
 	PropId string         `protobuf:"bytes,1,opt,name=propId,proto3" json:"propId,omitempty"`
-	Status ProposalStatus `protobuf:"varint,2,opt,name=status,proto3,enum=stafihub.stafihub.rvote.ProposalStatus" json:"status,omitempty"`
+	Status ProposalStatus `protobuf:"varint,2,opt,name=status,proto3,enum=sojahub.sojahub.rvote.ProposalStatus" json:"status,omitempty"`
 }
 
 func (m *MsgSubmitProposalResponse) Reset()         { *m = MsgSubmitProposalResponse{} }
@@ -208,10 +208,10 @@ func (m *MsgSubmitProposalResponse) GetStatus() ProposalStatus {
 }
 
 func init() {
-	proto.RegisterType((*MsgSetProposalLife)(nil), "stafihub.stafihub.rvote.MsgSetProposalLife")
-	proto.RegisterType((*MsgSetProposalLifeResponse)(nil), "stafihub.stafihub.rvote.MsgSetProposalLifeResponse")
-	proto.RegisterType((*MsgSubmitProposal)(nil), "stafihub.stafihub.rvote.MsgSubmitProposal")
-	proto.RegisterType((*MsgSubmitProposalResponse)(nil), "stafihub.stafihub.rvote.MsgSubmitProposalResponse")
+	proto.RegisterType((*MsgSetProposalLife)(nil), "sojahub.sojahub.rvote.MsgSetProposalLife")
+	proto.RegisterType((*MsgSetProposalLifeResponse)(nil), "sojahub.sojahub.rvote.MsgSetProposalLifeResponse")
+	proto.RegisterType((*MsgSubmitProposal)(nil), "sojahub.sojahub.rvote.MsgSubmitProposal")
+	proto.RegisterType((*MsgSubmitProposalResponse)(nil), "sojahub.sojahub.rvote.MsgSubmitProposalResponse")
 }
 
 func init() { proto.RegisterFile("rvote/tx.proto", fileDescriptor_a2fc698fa4472001) }
@@ -273,7 +273,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) SetProposalLife(ctx context.Context, in *MsgSetProposalLife, opts ...grpc.CallOption) (*MsgSetProposalLifeResponse, error) {
 	out := new(MsgSetProposalLifeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvote.Msg/SetProposalLife", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvote.Msg/SetProposalLife", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -282,7 +282,7 @@ func (c *msgClient) SetProposalLife(ctx context.Context, in *MsgSetProposalLife,
 
 func (c *msgClient) SubmitProposal(ctx context.Context, in *MsgSubmitProposal, opts ...grpc.CallOption) (*MsgSubmitProposalResponse, error) {
 	out := new(MsgSubmitProposalResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rvote.Msg/SubmitProposal", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rvote.Msg/SubmitProposal", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -320,7 +320,7 @@ func _Msg_SetProposalLife_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvote.Msg/SetProposalLife",
+		FullMethod: "/sojahub.sojahub.rvote.Msg/SetProposalLife",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetProposalLife(ctx, req.(*MsgSetProposalLife))
@@ -338,7 +338,7 @@ func _Msg_SubmitProposal_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rvote.Msg/SubmitProposal",
+		FullMethod: "/sojahub.sojahub.rvote.Msg/SubmitProposal",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SubmitProposal(ctx, req.(*MsgSubmitProposal))
@@ -347,7 +347,7 @@ func _Msg_SubmitProposal_Handler(srv interface{}, ctx context.Context, dec func(
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rvote.Msg",
+	ServiceName: "sojahub.sojahub.rvote.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

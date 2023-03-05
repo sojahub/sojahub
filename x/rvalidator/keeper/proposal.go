@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rvalidator/types"
+	"github.com/sojahub/sojahub/x/rvalidator/types"
 )
 
 // old val must exist && new val may exist or not exist in selectedRValidator

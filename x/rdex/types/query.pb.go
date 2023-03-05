@@ -522,18 +522,18 @@ func (m *QueryProviderSwitchResponse) GetProviderSwitch() bool {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "stafihub.stafihub.rdex.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "stafihub.stafihub.rdex.QueryParamsResponse")
-	proto.RegisterType((*QuerySwapPoolInfoRequest)(nil), "stafihub.stafihub.rdex.QuerySwapPoolInfoRequest")
-	proto.RegisterType((*QuerySwapPoolInfoResponse)(nil), "stafihub.stafihub.rdex.QuerySwapPoolInfoResponse")
-	proto.RegisterType((*QuerySwapPoolListRequest)(nil), "stafihub.stafihub.rdex.QuerySwapPoolListRequest")
-	proto.RegisterType((*QuerySwapPoolListResponse)(nil), "stafihub.stafihub.rdex.QuerySwapPoolListResponse")
-	proto.RegisterType((*QueryProviderListRequest)(nil), "stafihub.stafihub.rdex.QueryProviderListRequest")
-	proto.RegisterType((*QueryProviderListResponse)(nil), "stafihub.stafihub.rdex.QueryProviderListResponse")
-	proto.RegisterType((*QueryPoolCreatorListRequest)(nil), "stafihub.stafihub.rdex.QueryPoolCreatorListRequest")
-	proto.RegisterType((*QueryPoolCreatorListResponse)(nil), "stafihub.stafihub.rdex.QueryPoolCreatorListResponse")
-	proto.RegisterType((*QueryProviderSwitchRequest)(nil), "stafihub.stafihub.rdex.QueryProviderSwitchRequest")
-	proto.RegisterType((*QueryProviderSwitchResponse)(nil), "stafihub.stafihub.rdex.QueryProviderSwitchResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "sojahub.sojahub.rdex.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "sojahub.sojahub.rdex.QueryParamsResponse")
+	proto.RegisterType((*QuerySwapPoolInfoRequest)(nil), "sojahub.sojahub.rdex.QuerySwapPoolInfoRequest")
+	proto.RegisterType((*QuerySwapPoolInfoResponse)(nil), "sojahub.sojahub.rdex.QuerySwapPoolInfoResponse")
+	proto.RegisterType((*QuerySwapPoolListRequest)(nil), "sojahub.sojahub.rdex.QuerySwapPoolListRequest")
+	proto.RegisterType((*QuerySwapPoolListResponse)(nil), "sojahub.sojahub.rdex.QuerySwapPoolListResponse")
+	proto.RegisterType((*QueryProviderListRequest)(nil), "sojahub.sojahub.rdex.QueryProviderListRequest")
+	proto.RegisterType((*QueryProviderListResponse)(nil), "sojahub.sojahub.rdex.QueryProviderListResponse")
+	proto.RegisterType((*QueryPoolCreatorListRequest)(nil), "sojahub.sojahub.rdex.QueryPoolCreatorListRequest")
+	proto.RegisterType((*QueryPoolCreatorListResponse)(nil), "sojahub.sojahub.rdex.QueryPoolCreatorListResponse")
+	proto.RegisterType((*QueryProviderSwitchRequest)(nil), "sojahub.sojahub.rdex.QueryProviderSwitchRequest")
+	proto.RegisterType((*QueryProviderSwitchResponse)(nil), "sojahub.sojahub.rdex.QueryProviderSwitchResponse")
 }
 
 func init() { proto.RegisterFile("rdex/query.proto", fileDescriptor_aba77cce02ad22b2) }
@@ -619,7 +619,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -628,7 +628,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) SwapPoolInfo(ctx context.Context, in *QuerySwapPoolInfoRequest, opts ...grpc.CallOption) (*QuerySwapPoolInfoResponse, error) {
 	out := new(QuerySwapPoolInfoResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/SwapPoolInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/SwapPoolInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -637,7 +637,7 @@ func (c *queryClient) SwapPoolInfo(ctx context.Context, in *QuerySwapPoolInfoReq
 
 func (c *queryClient) SwapPoolList(ctx context.Context, in *QuerySwapPoolListRequest, opts ...grpc.CallOption) (*QuerySwapPoolListResponse, error) {
 	out := new(QuerySwapPoolListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/SwapPoolList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/SwapPoolList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -646,7 +646,7 @@ func (c *queryClient) SwapPoolList(ctx context.Context, in *QuerySwapPoolListReq
 
 func (c *queryClient) ProviderList(ctx context.Context, in *QueryProviderListRequest, opts ...grpc.CallOption) (*QueryProviderListResponse, error) {
 	out := new(QueryProviderListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/ProviderList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/ProviderList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -655,7 +655,7 @@ func (c *queryClient) ProviderList(ctx context.Context, in *QueryProviderListReq
 
 func (c *queryClient) PoolCreatorList(ctx context.Context, in *QueryPoolCreatorListRequest, opts ...grpc.CallOption) (*QueryPoolCreatorListResponse, error) {
 	out := new(QueryPoolCreatorListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/PoolCreatorList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/PoolCreatorList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -664,7 +664,7 @@ func (c *queryClient) PoolCreatorList(ctx context.Context, in *QueryPoolCreatorL
 
 func (c *queryClient) ProviderSwitch(ctx context.Context, in *QueryProviderSwitchRequest, opts ...grpc.CallOption) (*QueryProviderSwitchResponse, error) {
 	out := new(QueryProviderSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Query/ProviderSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Query/ProviderSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -724,7 +724,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/Params",
+		FullMethod: "/sojahub.sojahub.rdex.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -742,7 +742,7 @@ func _Query_SwapPoolInfo_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/SwapPoolInfo",
+		FullMethod: "/sojahub.sojahub.rdex.Query/SwapPoolInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SwapPoolInfo(ctx, req.(*QuerySwapPoolInfoRequest))
@@ -760,7 +760,7 @@ func _Query_SwapPoolList_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/SwapPoolList",
+		FullMethod: "/sojahub.sojahub.rdex.Query/SwapPoolList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SwapPoolList(ctx, req.(*QuerySwapPoolListRequest))
@@ -778,7 +778,7 @@ func _Query_ProviderList_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/ProviderList",
+		FullMethod: "/sojahub.sojahub.rdex.Query/ProviderList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ProviderList(ctx, req.(*QueryProviderListRequest))
@@ -796,7 +796,7 @@ func _Query_PoolCreatorList_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/PoolCreatorList",
+		FullMethod: "/sojahub.sojahub.rdex.Query/PoolCreatorList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).PoolCreatorList(ctx, req.(*QueryPoolCreatorListRequest))
@@ -814,7 +814,7 @@ func _Query_ProviderSwitch_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Query/ProviderSwitch",
+		FullMethod: "/sojahub.sojahub.rdex.Query/ProviderSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ProviderSwitch(ctx, req.(*QueryProviderSwitchRequest))
@@ -823,7 +823,7 @@ func _Query_ProviderSwitch_Handler(srv interface{}, ctx context.Context, dec fun
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rdex.Query",
+	ServiceName: "sojahub.sojahub.rdex.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rstaking/types"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/sojahub/sojahub/x/rstaking/types"
+	sudotypes "github.com/sojahub/sojahub/x/sudo/types"
 )
 
 func (k msgServer) AddValToWhitelist(goCtx context.Context, msg *types.MsgAddValToWhitelist) (*types.MsgAddValToWhitelistResponse, error) {

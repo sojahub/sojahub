@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/stafihub/stafihub/x/rmintreward/types"
+	"github.com/sojahub/sojahub/x/rmintreward/types"
 )
 
 type (

@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 )
 
 var _ = strconv.Itoa(0)

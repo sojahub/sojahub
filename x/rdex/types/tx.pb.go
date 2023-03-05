@@ -825,24 +825,24 @@ func (m *MsgRmPoolCreatorResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgRmPoolCreatorResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgCreatePool)(nil), "stafihub.stafihub.rdex.MsgCreatePool")
-	proto.RegisterType((*MsgCreatePoolResponse)(nil), "stafihub.stafihub.rdex.MsgCreatePoolResponse")
-	proto.RegisterType((*MsgAddLiquidity)(nil), "stafihub.stafihub.rdex.MsgAddLiquidity")
-	proto.RegisterType((*MsgAddLiquidityResponse)(nil), "stafihub.stafihub.rdex.MsgAddLiquidityResponse")
-	proto.RegisterType((*MsgSwap)(nil), "stafihub.stafihub.rdex.MsgSwap")
-	proto.RegisterType((*MsgSwapResponse)(nil), "stafihub.stafihub.rdex.MsgSwapResponse")
-	proto.RegisterType((*MsgRemoveLiquidity)(nil), "stafihub.stafihub.rdex.MsgRemoveLiquidity")
-	proto.RegisterType((*MsgRemoveLiquidityResponse)(nil), "stafihub.stafihub.rdex.MsgRemoveLiquidityResponse")
-	proto.RegisterType((*MsgToggleProviderSwitch)(nil), "stafihub.stafihub.rdex.MsgToggleProviderSwitch")
-	proto.RegisterType((*MsgToggleProviderSwitchResponse)(nil), "stafihub.stafihub.rdex.MsgToggleProviderSwitchResponse")
-	proto.RegisterType((*MsgAddProvider)(nil), "stafihub.stafihub.rdex.MsgAddProvider")
-	proto.RegisterType((*MsgAddProviderResponse)(nil), "stafihub.stafihub.rdex.MsgAddProviderResponse")
-	proto.RegisterType((*MsgRmProvider)(nil), "stafihub.stafihub.rdex.MsgRmProvider")
-	proto.RegisterType((*MsgRmProviderResponse)(nil), "stafihub.stafihub.rdex.MsgRmProviderResponse")
-	proto.RegisterType((*MsgAddPoolCreator)(nil), "stafihub.stafihub.rdex.MsgAddPoolCreator")
-	proto.RegisterType((*MsgAddPoolCreatorResponse)(nil), "stafihub.stafihub.rdex.MsgAddPoolCreatorResponse")
-	proto.RegisterType((*MsgRmPoolCreator)(nil), "stafihub.stafihub.rdex.MsgRmPoolCreator")
-	proto.RegisterType((*MsgRmPoolCreatorResponse)(nil), "stafihub.stafihub.rdex.MsgRmPoolCreatorResponse")
+	proto.RegisterType((*MsgCreatePool)(nil), "sojahub.sojahub.rdex.MsgCreatePool")
+	proto.RegisterType((*MsgCreatePoolResponse)(nil), "sojahub.sojahub.rdex.MsgCreatePoolResponse")
+	proto.RegisterType((*MsgAddLiquidity)(nil), "sojahub.sojahub.rdex.MsgAddLiquidity")
+	proto.RegisterType((*MsgAddLiquidityResponse)(nil), "sojahub.sojahub.rdex.MsgAddLiquidityResponse")
+	proto.RegisterType((*MsgSwap)(nil), "sojahub.sojahub.rdex.MsgSwap")
+	proto.RegisterType((*MsgSwapResponse)(nil), "sojahub.sojahub.rdex.MsgSwapResponse")
+	proto.RegisterType((*MsgRemoveLiquidity)(nil), "sojahub.sojahub.rdex.MsgRemoveLiquidity")
+	proto.RegisterType((*MsgRemoveLiquidityResponse)(nil), "sojahub.sojahub.rdex.MsgRemoveLiquidityResponse")
+	proto.RegisterType((*MsgToggleProviderSwitch)(nil), "sojahub.sojahub.rdex.MsgToggleProviderSwitch")
+	proto.RegisterType((*MsgToggleProviderSwitchResponse)(nil), "sojahub.sojahub.rdex.MsgToggleProviderSwitchResponse")
+	proto.RegisterType((*MsgAddProvider)(nil), "sojahub.sojahub.rdex.MsgAddProvider")
+	proto.RegisterType((*MsgAddProviderResponse)(nil), "sojahub.sojahub.rdex.MsgAddProviderResponse")
+	proto.RegisterType((*MsgRmProvider)(nil), "sojahub.sojahub.rdex.MsgRmProvider")
+	proto.RegisterType((*MsgRmProviderResponse)(nil), "sojahub.sojahub.rdex.MsgRmProviderResponse")
+	proto.RegisterType((*MsgAddPoolCreator)(nil), "sojahub.sojahub.rdex.MsgAddPoolCreator")
+	proto.RegisterType((*MsgAddPoolCreatorResponse)(nil), "sojahub.sojahub.rdex.MsgAddPoolCreatorResponse")
+	proto.RegisterType((*MsgRmPoolCreator)(nil), "sojahub.sojahub.rdex.MsgRmPoolCreator")
+	proto.RegisterType((*MsgRmPoolCreatorResponse)(nil), "sojahub.sojahub.rdex.MsgRmPoolCreatorResponse")
 }
 
 func init() { proto.RegisterFile("rdex/tx.proto", fileDescriptor_518c52ad1bbe1f44) }
@@ -932,7 +932,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreatePool(ctx context.Context, in *MsgCreatePool, opts ...grpc.CallOption) (*MsgCreatePoolResponse, error) {
 	out := new(MsgCreatePoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/CreatePool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/CreatePool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -941,7 +941,7 @@ func (c *msgClient) CreatePool(ctx context.Context, in *MsgCreatePool, opts ...g
 
 func (c *msgClient) AddLiquidity(ctx context.Context, in *MsgAddLiquidity, opts ...grpc.CallOption) (*MsgAddLiquidityResponse, error) {
 	out := new(MsgAddLiquidityResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/AddLiquidity", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/AddLiquidity", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -950,7 +950,7 @@ func (c *msgClient) AddLiquidity(ctx context.Context, in *MsgAddLiquidity, opts 
 
 func (c *msgClient) Swap(ctx context.Context, in *MsgSwap, opts ...grpc.CallOption) (*MsgSwapResponse, error) {
 	out := new(MsgSwapResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/Swap", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/Swap", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -959,7 +959,7 @@ func (c *msgClient) Swap(ctx context.Context, in *MsgSwap, opts ...grpc.CallOpti
 
 func (c *msgClient) RemoveLiquidity(ctx context.Context, in *MsgRemoveLiquidity, opts ...grpc.CallOption) (*MsgRemoveLiquidityResponse, error) {
 	out := new(MsgRemoveLiquidityResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/RemoveLiquidity", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/RemoveLiquidity", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -968,7 +968,7 @@ func (c *msgClient) RemoveLiquidity(ctx context.Context, in *MsgRemoveLiquidity,
 
 func (c *msgClient) ToggleProviderSwitch(ctx context.Context, in *MsgToggleProviderSwitch, opts ...grpc.CallOption) (*MsgToggleProviderSwitchResponse, error) {
 	out := new(MsgToggleProviderSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/ToggleProviderSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/ToggleProviderSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -977,7 +977,7 @@ func (c *msgClient) ToggleProviderSwitch(ctx context.Context, in *MsgToggleProvi
 
 func (c *msgClient) AddProvider(ctx context.Context, in *MsgAddProvider, opts ...grpc.CallOption) (*MsgAddProviderResponse, error) {
 	out := new(MsgAddProviderResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/AddProvider", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/AddProvider", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -986,7 +986,7 @@ func (c *msgClient) AddProvider(ctx context.Context, in *MsgAddProvider, opts ..
 
 func (c *msgClient) RmProvider(ctx context.Context, in *MsgRmProvider, opts ...grpc.CallOption) (*MsgRmProviderResponse, error) {
 	out := new(MsgRmProviderResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/RmProvider", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/RmProvider", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -995,7 +995,7 @@ func (c *msgClient) RmProvider(ctx context.Context, in *MsgRmProvider, opts ...g
 
 func (c *msgClient) AddPoolCreator(ctx context.Context, in *MsgAddPoolCreator, opts ...grpc.CallOption) (*MsgAddPoolCreatorResponse, error) {
 	out := new(MsgAddPoolCreatorResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/AddPoolCreator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/AddPoolCreator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1004,7 +1004,7 @@ func (c *msgClient) AddPoolCreator(ctx context.Context, in *MsgAddPoolCreator, o
 
 func (c *msgClient) RmPoolCreator(ctx context.Context, in *MsgRmPoolCreator, opts ...grpc.CallOption) (*MsgRmPoolCreatorResponse, error) {
 	out := new(MsgRmPoolCreatorResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rdex.Msg/RmPoolCreator", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rdex.Msg/RmPoolCreator", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1070,7 +1070,7 @@ func _Msg_CreatePool_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/CreatePool",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/CreatePool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreatePool(ctx, req.(*MsgCreatePool))
@@ -1088,7 +1088,7 @@ func _Msg_AddLiquidity_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/AddLiquidity",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/AddLiquidity",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddLiquidity(ctx, req.(*MsgAddLiquidity))
@@ -1106,7 +1106,7 @@ func _Msg_Swap_Handler(srv interface{}, ctx context.Context, dec func(interface{
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/Swap",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/Swap",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).Swap(ctx, req.(*MsgSwap))
@@ -1124,7 +1124,7 @@ func _Msg_RemoveLiquidity_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/RemoveLiquidity",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/RemoveLiquidity",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RemoveLiquidity(ctx, req.(*MsgRemoveLiquidity))
@@ -1142,7 +1142,7 @@ func _Msg_ToggleProviderSwitch_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/ToggleProviderSwitch",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/ToggleProviderSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ToggleProviderSwitch(ctx, req.(*MsgToggleProviderSwitch))
@@ -1160,7 +1160,7 @@ func _Msg_AddProvider_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/AddProvider",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/AddProvider",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddProvider(ctx, req.(*MsgAddProvider))
@@ -1178,7 +1178,7 @@ func _Msg_RmProvider_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/RmProvider",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/RmProvider",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmProvider(ctx, req.(*MsgRmProvider))
@@ -1196,7 +1196,7 @@ func _Msg_AddPoolCreator_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/AddPoolCreator",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/AddPoolCreator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddPoolCreator(ctx, req.(*MsgAddPoolCreator))
@@ -1214,7 +1214,7 @@ func _Msg_RmPoolCreator_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rdex.Msg/RmPoolCreator",
+		FullMethod: "/sojahub.sojahub.rdex.Msg/RmPoolCreator",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmPoolCreator(ctx, req.(*MsgRmPoolCreator))
@@ -1223,7 +1223,7 @@ func _Msg_RmPoolCreator_Handler(srv interface{}, ctx context.Context, dec func(i
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rdex.Msg",
+	ServiceName: "sojahub.sojahub.rdex.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

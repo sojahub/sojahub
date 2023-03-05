@@ -3,7 +3,7 @@ package types
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	ledgerTypes "github.com/stafihub/stafihub/x/ledger/types"
+	ledgerTypes "github.com/sojahub/sojahub/x/ledger/types"
 )
 
 // AccountKeeper defines the expected account keeper used for simulations (noalias)

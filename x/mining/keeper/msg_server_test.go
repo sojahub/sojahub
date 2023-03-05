@@ -6,11 +6,11 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/mining/keeper"
-	"github.com/stafihub/stafihub/x/mining/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/utils"
+	"github.com/sojahub/sojahub/x/mining/keeper"
+	"github.com/sojahub/sojahub/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

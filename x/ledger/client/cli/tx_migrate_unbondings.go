@@ -12,7 +12,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/sojahub/sojahub/x/ledger/types"
 )
 
 var _ = strconv.Itoa(0)

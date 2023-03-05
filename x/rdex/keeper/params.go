@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rdex/types"
+	"github.com/sojahub/sojahub/x/rdex/types"
 )
 
 // GetParams get all parameters as types.Params

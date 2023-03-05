@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/sojahub/sojahub/x/mining/types"
 )
 
 type msgServer struct {

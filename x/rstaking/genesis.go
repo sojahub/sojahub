@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authTypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/stafihub/stafihub/x/rstaking/keeper"
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/keeper"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

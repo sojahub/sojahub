@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/claim/types"
-	sudoTypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/sojahub/sojahub/x/claim/types"
+	sudoTypes "github.com/sojahub/sojahub/x/sudo/types"
 )
 
 func (k msgServer) ToggleClaimSwitch(goCtx context.Context, msg *types.MsgToggleClaimSwitch) (*types.MsgToggleClaimSwitchResponse, error) {

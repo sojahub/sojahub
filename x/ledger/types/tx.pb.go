@@ -12,7 +12,7 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_stafihub_stafihub_utils "github.com/stafihub/stafihub/utils"
+	github_com_sojahub_sojahub_utils "github.com/sojahub/sojahub/utils"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -427,7 +427,7 @@ var xxx_messageInfo_MsgClearCurrentEraSnapShotsResponse proto.InternalMessageInf
 type MsgSetStakingRewardCommission struct {
 	Creator    string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	Denom      string                                 `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
-	Commission github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"commission"`
+	Commission github_com_sojahub_sojahub_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/sojahub/sojahub/utils.Dec" json:"commission"`
 }
 
 func (m *MsgSetStakingRewardCommission) Reset()         { *m = MsgSetStakingRewardCommission{} }
@@ -790,7 +790,7 @@ var xxx_messageInfo_MsgLiquidityUnbondResponse proto.InternalMessageInfo
 type MsgSetUnbondCommission struct {
 	Creator    string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	Denom      string                                 `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
-	Commission github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"commission"`
+	Commission github_com_sojahub_sojahub_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/sojahub/sojahub/utils.Dec" json:"commission"`
 }
 
 func (m *MsgSetUnbondCommission) Reset()         { *m = MsgSetUnbondCommission{} }
@@ -881,7 +881,7 @@ type MsgSubmitSignature struct {
 	Denom     string         `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
 	Era       uint32         `protobuf:"varint,3,opt,name=era,proto3" json:"era"`
 	Pool      string         `protobuf:"bytes,4,opt,name=pool,proto3" json:"pool,omitempty"`
-	TxType    OriginalTxType `protobuf:"varint,5,opt,name=txType,proto3,enum=stafihub.stafihub.ledger.OriginalTxType" json:"txType,omitempty"`
+	TxType    OriginalTxType `protobuf:"varint,5,opt,name=txType,proto3,enum=sojahub.sojahub.ledger.OriginalTxType" json:"txType,omitempty"`
 	PropId    string         `protobuf:"bytes,6,opt,name=propId,proto3" json:"propId,omitempty"`
 	Signature string         `protobuf:"bytes,7,opt,name=signature,proto3" json:"signature,omitempty"`
 }
@@ -1540,7 +1540,7 @@ type MsgMigrateInit struct {
 	Active           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,5,opt,name=active,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"active"`
 	Bond             github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,6,opt,name=bond,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"bond"`
 	Unbond           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,7,opt,name=unbond,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"unbond"`
-	ExchangeRate     github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,8,opt,name=exchangeRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"exchangeRate"`
+	ExchangeRate     github_com_sojahub_sojahub_utils.Dec `protobuf:"bytes,8,opt,name=exchangeRate,proto3,customtype=github.com/sojahub/sojahub/utils.Dec" json:"exchangeRate"`
 	TotalProtocolFee github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,9,opt,name=totalProtocolFee,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"totalProtocolFee"`
 }
 
@@ -2198,7 +2198,7 @@ type MsgSetPoolStatus struct {
 	Creator string     `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	Denom   string     `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
 	Pool    string     `protobuf:"bytes,3,opt,name=pool,proto3" json:"pool,omitempty"`
-	Status  PoolStatus `protobuf:"varint,4,opt,name=status,proto3,enum=stafihub.stafihub.ledger.PoolStatus" json:"status,omitempty"`
+	Status  PoolStatus `protobuf:"varint,4,opt,name=status,proto3,enum=sojahub.sojahub.ledger.PoolStatus" json:"status,omitempty"`
 }
 
 func (m *MsgSetPoolStatus) Reset()         { *m = MsgSetPoolStatus{} }
@@ -2299,52 +2299,52 @@ func (m *MsgSetPoolStatusResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgSetPoolStatusResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgSetEraUnbondLimit)(nil), "stafihub.stafihub.ledger.MsgSetEraUnbondLimit")
-	proto.RegisterType((*MsgSetEraUnbondLimitResponse)(nil), "stafihub.stafihub.ledger.MsgSetEraUnbondLimitResponse")
-	proto.RegisterType((*MsgSetPoolDetail)(nil), "stafihub.stafihub.ledger.MsgSetPoolDetail")
-	proto.RegisterType((*MsgSetPoolDetailResponse)(nil), "stafihub.stafihub.ledger.MsgSetPoolDetailResponse")
-	proto.RegisterType((*MsgSetLeastBond)(nil), "stafihub.stafihub.ledger.MsgSetLeastBond")
-	proto.RegisterType((*MsgSetLeastBondResponse)(nil), "stafihub.stafihub.ledger.MsgSetLeastBondResponse")
-	proto.RegisterType((*MsgClearCurrentEraSnapShots)(nil), "stafihub.stafihub.ledger.MsgClearCurrentEraSnapShots")
-	proto.RegisterType((*MsgClearCurrentEraSnapShotsResponse)(nil), "stafihub.stafihub.ledger.MsgClearCurrentEraSnapShotsResponse")
-	proto.RegisterType((*MsgSetStakingRewardCommission)(nil), "stafihub.stafihub.ledger.MsgSetStakingRewardCommission")
-	proto.RegisterType((*MsgSetStakingRewardCommissionResponse)(nil), "stafihub.stafihub.ledger.MsgSetStakingRewardCommissionResponse")
-	proto.RegisterType((*MsgSetProtocolFeeReceiver)(nil), "stafihub.stafihub.ledger.MsgSetProtocolFeeReceiver")
-	proto.RegisterType((*MsgSetProtocolFeeReceiverResponse)(nil), "stafihub.stafihub.ledger.MsgSetProtocolFeeReceiverResponse")
-	proto.RegisterType((*MsgSetUnbondRelayFee)(nil), "stafihub.stafihub.ledger.MsgSetUnbondRelayFee")
-	proto.RegisterType((*MsgSetUnbondRelayFeeResponse)(nil), "stafihub.stafihub.ledger.MsgSetUnbondRelayFeeResponse")
-	proto.RegisterType((*MsgLiquidityUnbond)(nil), "stafihub.stafihub.ledger.MsgLiquidityUnbond")
-	proto.RegisterType((*MsgLiquidityUnbondResponse)(nil), "stafihub.stafihub.ledger.MsgLiquidityUnbondResponse")
-	proto.RegisterType((*MsgSetUnbondCommission)(nil), "stafihub.stafihub.ledger.MsgSetUnbondCommission")
-	proto.RegisterType((*MsgSetUnbondCommissionResponse)(nil), "stafihub.stafihub.ledger.MsgSetUnbondCommissionResponse")
-	proto.RegisterType((*MsgSubmitSignature)(nil), "stafihub.stafihub.ledger.MsgSubmitSignature")
-	proto.RegisterType((*MsgSubmitSignatureResponse)(nil), "stafihub.stafihub.ledger.MsgSubmitSignatureResponse")
-	proto.RegisterType((*MsgSetRParams)(nil), "stafihub.stafihub.ledger.MsgSetRParams")
-	proto.RegisterType((*MsgSetRParamsResponse)(nil), "stafihub.stafihub.ledger.MsgSetRParamsResponse")
-	proto.RegisterType((*MsgSetRelayFeeReceiver)(nil), "stafihub.stafihub.ledger.MsgSetRelayFeeReceiver")
-	proto.RegisterType((*MsgSetRelayFeeReceiverResponse)(nil), "stafihub.stafihub.ledger.MsgSetRelayFeeReceiverResponse")
-	proto.RegisterType((*MsgSetRelayGasPrice)(nil), "stafihub.stafihub.ledger.MsgSetRelayGasPrice")
-	proto.RegisterType((*MsgSetRelayGasPriceResponse)(nil), "stafihub.stafihub.ledger.MsgSetRelayGasPriceResponse")
-	proto.RegisterType((*MsgSetEraSeconds)(nil), "stafihub.stafihub.ledger.MsgSetEraSeconds")
-	proto.RegisterType((*MsgSetEraSecondsResponse)(nil), "stafihub.stafihub.ledger.MsgSetEraSecondsResponse")
-	proto.RegisterType((*MsgRmBondedPool)(nil), "stafihub.stafihub.ledger.MsgRmBondedPool")
-	proto.RegisterType((*MsgRmBondedPoolResponse)(nil), "stafihub.stafihub.ledger.MsgRmBondedPoolResponse")
-	proto.RegisterType((*MsgMigrateInit)(nil), "stafihub.stafihub.ledger.MsgMigrateInit")
-	proto.RegisterType((*MsgMigrateInitResponse)(nil), "stafihub.stafihub.ledger.MsgMigrateInitResponse")
-	proto.RegisterType((*MsgMigrateUnbondings)(nil), "stafihub.stafihub.ledger.MsgMigrateUnbondings")
-	proto.RegisterType((*MsgMigrateUnbondingsResponse)(nil), "stafihub.stafihub.ledger.MsgMigrateUnbondingsResponse")
-	proto.RegisterType((*MsgToggleUnbondSwitch)(nil), "stafihub.stafihub.ledger.MsgToggleUnbondSwitch")
-	proto.RegisterType((*MsgToggleUnbondSwitchResponse)(nil), "stafihub.stafihub.ledger.MsgToggleUnbondSwitchResponse")
-	proto.RegisterType((*MsgUnsealMigrateInit)(nil), "stafihub.stafihub.ledger.MsgUnsealMigrateInit")
-	proto.RegisterType((*MsgUnsealMigrateInitResponse)(nil), "stafihub.stafihub.ledger.MsgUnsealMigrateInitResponse")
-	proto.RegisterType((*MsgRegisterIcaPool)(nil), "stafihub.stafihub.ledger.MsgRegisterIcaPool")
-	proto.RegisterType((*MsgRegisterIcaPoolResponse)(nil), "stafihub.stafihub.ledger.MsgRegisterIcaPoolResponse")
-	proto.RegisterType((*MsgSetWithdrawalAddr)(nil), "stafihub.stafihub.ledger.MsgSetWithdrawalAddr")
-	proto.RegisterType((*MsgSetWithdrawalAddrResponse)(nil), "stafihub.stafihub.ledger.MsgSetWithdrawalAddrResponse")
-	proto.RegisterType((*MsgInitPool)(nil), "stafihub.stafihub.ledger.MsgInitPool")
-	proto.RegisterType((*MsgInitPoolResponse)(nil), "stafihub.stafihub.ledger.MsgInitPoolResponse")
-	proto.RegisterType((*MsgSetPoolStatus)(nil), "stafihub.stafihub.ledger.MsgSetPoolStatus")
-	proto.RegisterType((*MsgSetPoolStatusResponse)(nil), "stafihub.stafihub.ledger.MsgSetPoolStatusResponse")
+	proto.RegisterType((*MsgSetEraUnbondLimit)(nil), "sojahub.sojahub.ledger.MsgSetEraUnbondLimit")
+	proto.RegisterType((*MsgSetEraUnbondLimitResponse)(nil), "sojahub.sojahub.ledger.MsgSetEraUnbondLimitResponse")
+	proto.RegisterType((*MsgSetPoolDetail)(nil), "sojahub.sojahub.ledger.MsgSetPoolDetail")
+	proto.RegisterType((*MsgSetPoolDetailResponse)(nil), "sojahub.sojahub.ledger.MsgSetPoolDetailResponse")
+	proto.RegisterType((*MsgSetLeastBond)(nil), "sojahub.sojahub.ledger.MsgSetLeastBond")
+	proto.RegisterType((*MsgSetLeastBondResponse)(nil), "sojahub.sojahub.ledger.MsgSetLeastBondResponse")
+	proto.RegisterType((*MsgClearCurrentEraSnapShots)(nil), "sojahub.sojahub.ledger.MsgClearCurrentEraSnapShots")
+	proto.RegisterType((*MsgClearCurrentEraSnapShotsResponse)(nil), "sojahub.sojahub.ledger.MsgClearCurrentEraSnapShotsResponse")
+	proto.RegisterType((*MsgSetStakingRewardCommission)(nil), "sojahub.sojahub.ledger.MsgSetStakingRewardCommission")
+	proto.RegisterType((*MsgSetStakingRewardCommissionResponse)(nil), "sojahub.sojahub.ledger.MsgSetStakingRewardCommissionResponse")
+	proto.RegisterType((*MsgSetProtocolFeeReceiver)(nil), "sojahub.sojahub.ledger.MsgSetProtocolFeeReceiver")
+	proto.RegisterType((*MsgSetProtocolFeeReceiverResponse)(nil), "sojahub.sojahub.ledger.MsgSetProtocolFeeReceiverResponse")
+	proto.RegisterType((*MsgSetUnbondRelayFee)(nil), "sojahub.sojahub.ledger.MsgSetUnbondRelayFee")
+	proto.RegisterType((*MsgSetUnbondRelayFeeResponse)(nil), "sojahub.sojahub.ledger.MsgSetUnbondRelayFeeResponse")
+	proto.RegisterType((*MsgLiquidityUnbond)(nil), "sojahub.sojahub.ledger.MsgLiquidityUnbond")
+	proto.RegisterType((*MsgLiquidityUnbondResponse)(nil), "sojahub.sojahub.ledger.MsgLiquidityUnbondResponse")
+	proto.RegisterType((*MsgSetUnbondCommission)(nil), "sojahub.sojahub.ledger.MsgSetUnbondCommission")
+	proto.RegisterType((*MsgSetUnbondCommissionResponse)(nil), "sojahub.sojahub.ledger.MsgSetUnbondCommissionResponse")
+	proto.RegisterType((*MsgSubmitSignature)(nil), "sojahub.sojahub.ledger.MsgSubmitSignature")
+	proto.RegisterType((*MsgSubmitSignatureResponse)(nil), "sojahub.sojahub.ledger.MsgSubmitSignatureResponse")
+	proto.RegisterType((*MsgSetRParams)(nil), "sojahub.sojahub.ledger.MsgSetRParams")
+	proto.RegisterType((*MsgSetRParamsResponse)(nil), "sojahub.sojahub.ledger.MsgSetRParamsResponse")
+	proto.RegisterType((*MsgSetRelayFeeReceiver)(nil), "sojahub.sojahub.ledger.MsgSetRelayFeeReceiver")
+	proto.RegisterType((*MsgSetRelayFeeReceiverResponse)(nil), "sojahub.sojahub.ledger.MsgSetRelayFeeReceiverResponse")
+	proto.RegisterType((*MsgSetRelayGasPrice)(nil), "sojahub.sojahub.ledger.MsgSetRelayGasPrice")
+	proto.RegisterType((*MsgSetRelayGasPriceResponse)(nil), "sojahub.sojahub.ledger.MsgSetRelayGasPriceResponse")
+	proto.RegisterType((*MsgSetEraSeconds)(nil), "sojahub.sojahub.ledger.MsgSetEraSeconds")
+	proto.RegisterType((*MsgSetEraSecondsResponse)(nil), "sojahub.sojahub.ledger.MsgSetEraSecondsResponse")
+	proto.RegisterType((*MsgRmBondedPool)(nil), "sojahub.sojahub.ledger.MsgRmBondedPool")
+	proto.RegisterType((*MsgRmBondedPoolResponse)(nil), "sojahub.sojahub.ledger.MsgRmBondedPoolResponse")
+	proto.RegisterType((*MsgMigrateInit)(nil), "sojahub.sojahub.ledger.MsgMigrateInit")
+	proto.RegisterType((*MsgMigrateInitResponse)(nil), "sojahub.sojahub.ledger.MsgMigrateInitResponse")
+	proto.RegisterType((*MsgMigrateUnbondings)(nil), "sojahub.sojahub.ledger.MsgMigrateUnbondings")
+	proto.RegisterType((*MsgMigrateUnbondingsResponse)(nil), "sojahub.sojahub.ledger.MsgMigrateUnbondingsResponse")
+	proto.RegisterType((*MsgToggleUnbondSwitch)(nil), "sojahub.sojahub.ledger.MsgToggleUnbondSwitch")
+	proto.RegisterType((*MsgToggleUnbondSwitchResponse)(nil), "sojahub.sojahub.ledger.MsgToggleUnbondSwitchResponse")
+	proto.RegisterType((*MsgUnsealMigrateInit)(nil), "sojahub.sojahub.ledger.MsgUnsealMigrateInit")
+	proto.RegisterType((*MsgUnsealMigrateInitResponse)(nil), "sojahub.sojahub.ledger.MsgUnsealMigrateInitResponse")
+	proto.RegisterType((*MsgRegisterIcaPool)(nil), "sojahub.sojahub.ledger.MsgRegisterIcaPool")
+	proto.RegisterType((*MsgRegisterIcaPoolResponse)(nil), "sojahub.sojahub.ledger.MsgRegisterIcaPoolResponse")
+	proto.RegisterType((*MsgSetWithdrawalAddr)(nil), "sojahub.sojahub.ledger.MsgSetWithdrawalAddr")
+	proto.RegisterType((*MsgSetWithdrawalAddrResponse)(nil), "sojahub.sojahub.ledger.MsgSetWithdrawalAddrResponse")
+	proto.RegisterType((*MsgInitPool)(nil), "sojahub.sojahub.ledger.MsgInitPool")
+	proto.RegisterType((*MsgInitPoolResponse)(nil), "sojahub.sojahub.ledger.MsgInitPoolResponse")
+	proto.RegisterType((*MsgSetPoolStatus)(nil), "sojahub.sojahub.ledger.MsgSetPoolStatus")
+	proto.RegisterType((*MsgSetPoolStatusResponse)(nil), "sojahub.sojahub.ledger.MsgSetPoolStatusResponse")
 }
 
 func init() { proto.RegisterFile("ledger/tx.proto", fileDescriptor_8b521ea88205ae40) }
@@ -2508,7 +2508,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) SetEraUnbondLimit(ctx context.Context, in *MsgSetEraUnbondLimit, opts ...grpc.CallOption) (*MsgSetEraUnbondLimitResponse, error) {
 	out := new(MsgSetEraUnbondLimitResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetEraUnbondLimit", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetEraUnbondLimit", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2517,7 +2517,7 @@ func (c *msgClient) SetEraUnbondLimit(ctx context.Context, in *MsgSetEraUnbondLi
 
 func (c *msgClient) SetPoolDetail(ctx context.Context, in *MsgSetPoolDetail, opts ...grpc.CallOption) (*MsgSetPoolDetailResponse, error) {
 	out := new(MsgSetPoolDetailResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetPoolDetail", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetPoolDetail", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2526,7 +2526,7 @@ func (c *msgClient) SetPoolDetail(ctx context.Context, in *MsgSetPoolDetail, opt
 
 func (c *msgClient) SetLeastBond(ctx context.Context, in *MsgSetLeastBond, opts ...grpc.CallOption) (*MsgSetLeastBondResponse, error) {
 	out := new(MsgSetLeastBondResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetLeastBond", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetLeastBond", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2535,7 +2535,7 @@ func (c *msgClient) SetLeastBond(ctx context.Context, in *MsgSetLeastBond, opts 
 
 func (c *msgClient) ClearCurrentEraSnapShots(ctx context.Context, in *MsgClearCurrentEraSnapShots, opts ...grpc.CallOption) (*MsgClearCurrentEraSnapShotsResponse, error) {
 	out := new(MsgClearCurrentEraSnapShotsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/ClearCurrentEraSnapShots", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/ClearCurrentEraSnapShots", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2544,7 +2544,7 @@ func (c *msgClient) ClearCurrentEraSnapShots(ctx context.Context, in *MsgClearCu
 
 func (c *msgClient) SetStakingRewardCommission(ctx context.Context, in *MsgSetStakingRewardCommission, opts ...grpc.CallOption) (*MsgSetStakingRewardCommissionResponse, error) {
 	out := new(MsgSetStakingRewardCommissionResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetStakingRewardCommission", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetStakingRewardCommission", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2553,7 +2553,7 @@ func (c *msgClient) SetStakingRewardCommission(ctx context.Context, in *MsgSetSt
 
 func (c *msgClient) SetProtocolFeeReceiver(ctx context.Context, in *MsgSetProtocolFeeReceiver, opts ...grpc.CallOption) (*MsgSetProtocolFeeReceiverResponse, error) {
 	out := new(MsgSetProtocolFeeReceiverResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetProtocolFeeReceiver", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetProtocolFeeReceiver", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2562,7 +2562,7 @@ func (c *msgClient) SetProtocolFeeReceiver(ctx context.Context, in *MsgSetProtoc
 
 func (c *msgClient) SetUnbondRelayFee(ctx context.Context, in *MsgSetUnbondRelayFee, opts ...grpc.CallOption) (*MsgSetUnbondRelayFeeResponse, error) {
 	out := new(MsgSetUnbondRelayFeeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetUnbondRelayFee", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetUnbondRelayFee", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2571,7 +2571,7 @@ func (c *msgClient) SetUnbondRelayFee(ctx context.Context, in *MsgSetUnbondRelay
 
 func (c *msgClient) LiquidityUnbond(ctx context.Context, in *MsgLiquidityUnbond, opts ...grpc.CallOption) (*MsgLiquidityUnbondResponse, error) {
 	out := new(MsgLiquidityUnbondResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/LiquidityUnbond", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/LiquidityUnbond", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2580,7 +2580,7 @@ func (c *msgClient) LiquidityUnbond(ctx context.Context, in *MsgLiquidityUnbond,
 
 func (c *msgClient) SetUnbondCommission(ctx context.Context, in *MsgSetUnbondCommission, opts ...grpc.CallOption) (*MsgSetUnbondCommissionResponse, error) {
 	out := new(MsgSetUnbondCommissionResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetUnbondCommission", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetUnbondCommission", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2589,7 +2589,7 @@ func (c *msgClient) SetUnbondCommission(ctx context.Context, in *MsgSetUnbondCom
 
 func (c *msgClient) SubmitSignature(ctx context.Context, in *MsgSubmitSignature, opts ...grpc.CallOption) (*MsgSubmitSignatureResponse, error) {
 	out := new(MsgSubmitSignatureResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SubmitSignature", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SubmitSignature", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2598,7 +2598,7 @@ func (c *msgClient) SubmitSignature(ctx context.Context, in *MsgSubmitSignature,
 
 func (c *msgClient) SetRParams(ctx context.Context, in *MsgSetRParams, opts ...grpc.CallOption) (*MsgSetRParamsResponse, error) {
 	out := new(MsgSetRParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetRParams", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetRParams", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2607,7 +2607,7 @@ func (c *msgClient) SetRParams(ctx context.Context, in *MsgSetRParams, opts ...g
 
 func (c *msgClient) SetRelayFeeReceiver(ctx context.Context, in *MsgSetRelayFeeReceiver, opts ...grpc.CallOption) (*MsgSetRelayFeeReceiverResponse, error) {
 	out := new(MsgSetRelayFeeReceiverResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetRelayFeeReceiver", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetRelayFeeReceiver", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2616,7 +2616,7 @@ func (c *msgClient) SetRelayFeeReceiver(ctx context.Context, in *MsgSetRelayFeeR
 
 func (c *msgClient) SetRelayGasPrice(ctx context.Context, in *MsgSetRelayGasPrice, opts ...grpc.CallOption) (*MsgSetRelayGasPriceResponse, error) {
 	out := new(MsgSetRelayGasPriceResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetRelayGasPrice", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetRelayGasPrice", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2625,7 +2625,7 @@ func (c *msgClient) SetRelayGasPrice(ctx context.Context, in *MsgSetRelayGasPric
 
 func (c *msgClient) SetEraSeconds(ctx context.Context, in *MsgSetEraSeconds, opts ...grpc.CallOption) (*MsgSetEraSecondsResponse, error) {
 	out := new(MsgSetEraSecondsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetEraSeconds", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetEraSeconds", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2634,7 +2634,7 @@ func (c *msgClient) SetEraSeconds(ctx context.Context, in *MsgSetEraSeconds, opt
 
 func (c *msgClient) RmBondedPool(ctx context.Context, in *MsgRmBondedPool, opts ...grpc.CallOption) (*MsgRmBondedPoolResponse, error) {
 	out := new(MsgRmBondedPoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/RmBondedPool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/RmBondedPool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2643,7 +2643,7 @@ func (c *msgClient) RmBondedPool(ctx context.Context, in *MsgRmBondedPool, opts 
 
 func (c *msgClient) MigrateInit(ctx context.Context, in *MsgMigrateInit, opts ...grpc.CallOption) (*MsgMigrateInitResponse, error) {
 	out := new(MsgMigrateInitResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/MigrateInit", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/MigrateInit", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2652,7 +2652,7 @@ func (c *msgClient) MigrateInit(ctx context.Context, in *MsgMigrateInit, opts ..
 
 func (c *msgClient) MigrateUnbondings(ctx context.Context, in *MsgMigrateUnbondings, opts ...grpc.CallOption) (*MsgMigrateUnbondingsResponse, error) {
 	out := new(MsgMigrateUnbondingsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/MigrateUnbondings", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/MigrateUnbondings", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2661,7 +2661,7 @@ func (c *msgClient) MigrateUnbondings(ctx context.Context, in *MsgMigrateUnbondi
 
 func (c *msgClient) ToggleUnbondSwitch(ctx context.Context, in *MsgToggleUnbondSwitch, opts ...grpc.CallOption) (*MsgToggleUnbondSwitchResponse, error) {
 	out := new(MsgToggleUnbondSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/ToggleUnbondSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/ToggleUnbondSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2670,7 +2670,7 @@ func (c *msgClient) ToggleUnbondSwitch(ctx context.Context, in *MsgToggleUnbondS
 
 func (c *msgClient) UnsealMigrateInit(ctx context.Context, in *MsgUnsealMigrateInit, opts ...grpc.CallOption) (*MsgUnsealMigrateInitResponse, error) {
 	out := new(MsgUnsealMigrateInitResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/UnsealMigrateInit", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/UnsealMigrateInit", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2679,7 +2679,7 @@ func (c *msgClient) UnsealMigrateInit(ctx context.Context, in *MsgUnsealMigrateI
 
 func (c *msgClient) RegisterIcaPool(ctx context.Context, in *MsgRegisterIcaPool, opts ...grpc.CallOption) (*MsgRegisterIcaPoolResponse, error) {
 	out := new(MsgRegisterIcaPoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/RegisterIcaPool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/RegisterIcaPool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2688,7 +2688,7 @@ func (c *msgClient) RegisterIcaPool(ctx context.Context, in *MsgRegisterIcaPool,
 
 func (c *msgClient) SetWithdrawalAddr(ctx context.Context, in *MsgSetWithdrawalAddr, opts ...grpc.CallOption) (*MsgSetWithdrawalAddrResponse, error) {
 	out := new(MsgSetWithdrawalAddrResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetWithdrawalAddr", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetWithdrawalAddr", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2697,7 +2697,7 @@ func (c *msgClient) SetWithdrawalAddr(ctx context.Context, in *MsgSetWithdrawalA
 
 func (c *msgClient) InitPool(ctx context.Context, in *MsgInitPool, opts ...grpc.CallOption) (*MsgInitPoolResponse, error) {
 	out := new(MsgInitPoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/InitPool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/InitPool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2706,7 +2706,7 @@ func (c *msgClient) InitPool(ctx context.Context, in *MsgInitPool, opts ...grpc.
 
 func (c *msgClient) SetPoolStatus(ctx context.Context, in *MsgSetPoolStatus, opts ...grpc.CallOption) (*MsgSetPoolStatusResponse, error) {
 	out := new(MsgSetPoolStatusResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Msg/SetPoolStatus", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.ledger.Msg/SetPoolStatus", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2828,7 +2828,7 @@ func _Msg_SetEraUnbondLimit_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetEraUnbondLimit",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetEraUnbondLimit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetEraUnbondLimit(ctx, req.(*MsgSetEraUnbondLimit))
@@ -2846,7 +2846,7 @@ func _Msg_SetPoolDetail_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetPoolDetail",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetPoolDetail",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetPoolDetail(ctx, req.(*MsgSetPoolDetail))
@@ -2864,7 +2864,7 @@ func _Msg_SetLeastBond_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetLeastBond",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetLeastBond",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetLeastBond(ctx, req.(*MsgSetLeastBond))
@@ -2882,7 +2882,7 @@ func _Msg_ClearCurrentEraSnapShots_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/ClearCurrentEraSnapShots",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/ClearCurrentEraSnapShots",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ClearCurrentEraSnapShots(ctx, req.(*MsgClearCurrentEraSnapShots))
@@ -2900,7 +2900,7 @@ func _Msg_SetStakingRewardCommission_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetStakingRewardCommission",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetStakingRewardCommission",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetStakingRewardCommission(ctx, req.(*MsgSetStakingRewardCommission))
@@ -2918,7 +2918,7 @@ func _Msg_SetProtocolFeeReceiver_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetProtocolFeeReceiver",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetProtocolFeeReceiver",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetProtocolFeeReceiver(ctx, req.(*MsgSetProtocolFeeReceiver))
@@ -2936,7 +2936,7 @@ func _Msg_SetUnbondRelayFee_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetUnbondRelayFee",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetUnbondRelayFee",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetUnbondRelayFee(ctx, req.(*MsgSetUnbondRelayFee))
@@ -2954,7 +2954,7 @@ func _Msg_LiquidityUnbond_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/LiquidityUnbond",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/LiquidityUnbond",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).LiquidityUnbond(ctx, req.(*MsgLiquidityUnbond))
@@ -2972,7 +2972,7 @@ func _Msg_SetUnbondCommission_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetUnbondCommission",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetUnbondCommission",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetUnbondCommission(ctx, req.(*MsgSetUnbondCommission))
@@ -2990,7 +2990,7 @@ func _Msg_SubmitSignature_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SubmitSignature",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SubmitSignature",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SubmitSignature(ctx, req.(*MsgSubmitSignature))
@@ -3008,7 +3008,7 @@ func _Msg_SetRParams_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetRParams",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetRParams",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetRParams(ctx, req.(*MsgSetRParams))
@@ -3026,7 +3026,7 @@ func _Msg_SetRelayFeeReceiver_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetRelayFeeReceiver",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetRelayFeeReceiver",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetRelayFeeReceiver(ctx, req.(*MsgSetRelayFeeReceiver))
@@ -3044,7 +3044,7 @@ func _Msg_SetRelayGasPrice_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetRelayGasPrice",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetRelayGasPrice",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetRelayGasPrice(ctx, req.(*MsgSetRelayGasPrice))
@@ -3062,7 +3062,7 @@ func _Msg_SetEraSeconds_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetEraSeconds",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetEraSeconds",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetEraSeconds(ctx, req.(*MsgSetEraSeconds))
@@ -3080,7 +3080,7 @@ func _Msg_RmBondedPool_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/RmBondedPool",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/RmBondedPool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmBondedPool(ctx, req.(*MsgRmBondedPool))
@@ -3098,7 +3098,7 @@ func _Msg_MigrateInit_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/MigrateInit",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/MigrateInit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).MigrateInit(ctx, req.(*MsgMigrateInit))
@@ -3116,7 +3116,7 @@ func _Msg_MigrateUnbondings_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/MigrateUnbondings",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/MigrateUnbondings",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).MigrateUnbondings(ctx, req.(*MsgMigrateUnbondings))
@@ -3134,7 +3134,7 @@ func _Msg_ToggleUnbondSwitch_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/ToggleUnbondSwitch",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/ToggleUnbondSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ToggleUnbondSwitch(ctx, req.(*MsgToggleUnbondSwitch))
@@ -3152,7 +3152,7 @@ func _Msg_UnsealMigrateInit_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/UnsealMigrateInit",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/UnsealMigrateInit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UnsealMigrateInit(ctx, req.(*MsgUnsealMigrateInit))
@@ -3170,7 +3170,7 @@ func _Msg_RegisterIcaPool_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/RegisterIcaPool",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/RegisterIcaPool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RegisterIcaPool(ctx, req.(*MsgRegisterIcaPool))
@@ -3188,7 +3188,7 @@ func _Msg_SetWithdrawalAddr_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetWithdrawalAddr",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetWithdrawalAddr",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetWithdrawalAddr(ctx, req.(*MsgSetWithdrawalAddr))
@@ -3206,7 +3206,7 @@ func _Msg_InitPool_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/InitPool",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/InitPool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).InitPool(ctx, req.(*MsgInitPool))
@@ -3224,7 +3224,7 @@ func _Msg_SetPoolStatus_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Msg/SetPoolStatus",
+		FullMethod: "/sojahub.sojahub.ledger.Msg/SetPoolStatus",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetPoolStatus(ctx, req.(*MsgSetPoolStatus))
@@ -3233,7 +3233,7 @@ func _Msg_SetPoolStatus_Handler(srv interface{}, ctx context.Context, dec func(i
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.ledger.Msg",
+	ServiceName: "sojahub.sojahub.ledger.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

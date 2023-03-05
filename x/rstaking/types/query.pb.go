@@ -507,18 +507,18 @@ func (m *QueryDelegatorWhitelistSwitchResponse) GetIsOpen() bool {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "stafihub.stafihub.rstaking.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "stafihub.stafihub.rstaking.QueryParamsResponse")
-	proto.RegisterType((*QueryInflationBaseRequest)(nil), "stafihub.stafihub.rstaking.QueryInflationBaseRequest")
-	proto.RegisterType((*QueryInflationBaseResponse)(nil), "stafihub.stafihub.rstaking.QueryInflationBaseResponse")
-	proto.RegisterType((*QueryValidatorWhitelistRequest)(nil), "stafihub.stafihub.rstaking.QueryValidatorWhitelistRequest")
-	proto.RegisterType((*QueryValidatorWhitelistResponse)(nil), "stafihub.stafihub.rstaking.QueryValidatorWhitelistResponse")
-	proto.RegisterType((*QueryValidatorWhitelistSwitchRequest)(nil), "stafihub.stafihub.rstaking.QueryValidatorWhitelistSwitchRequest")
-	proto.RegisterType((*QueryValidatorWhitelistSwitchResponse)(nil), "stafihub.stafihub.rstaking.QueryValidatorWhitelistSwitchResponse")
-	proto.RegisterType((*QueryDelegatorWhitelistRequest)(nil), "stafihub.stafihub.rstaking.QueryDelegatorWhitelistRequest")
-	proto.RegisterType((*QueryDelegatorWhitelistResponse)(nil), "stafihub.stafihub.rstaking.QueryDelegatorWhitelistResponse")
-	proto.RegisterType((*QueryDelegatorWhitelistSwitchRequest)(nil), "stafihub.stafihub.rstaking.QueryDelegatorWhitelistSwitchRequest")
-	proto.RegisterType((*QueryDelegatorWhitelistSwitchResponse)(nil), "stafihub.stafihub.rstaking.QueryDelegatorWhitelistSwitchResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "sojahub.sojahub.rstaking.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "sojahub.sojahub.rstaking.QueryParamsResponse")
+	proto.RegisterType((*QueryInflationBaseRequest)(nil), "sojahub.sojahub.rstaking.QueryInflationBaseRequest")
+	proto.RegisterType((*QueryInflationBaseResponse)(nil), "sojahub.sojahub.rstaking.QueryInflationBaseResponse")
+	proto.RegisterType((*QueryValidatorWhitelistRequest)(nil), "sojahub.sojahub.rstaking.QueryValidatorWhitelistRequest")
+	proto.RegisterType((*QueryValidatorWhitelistResponse)(nil), "sojahub.sojahub.rstaking.QueryValidatorWhitelistResponse")
+	proto.RegisterType((*QueryValidatorWhitelistSwitchRequest)(nil), "sojahub.sojahub.rstaking.QueryValidatorWhitelistSwitchRequest")
+	proto.RegisterType((*QueryValidatorWhitelistSwitchResponse)(nil), "sojahub.sojahub.rstaking.QueryValidatorWhitelistSwitchResponse")
+	proto.RegisterType((*QueryDelegatorWhitelistRequest)(nil), "sojahub.sojahub.rstaking.QueryDelegatorWhitelistRequest")
+	proto.RegisterType((*QueryDelegatorWhitelistResponse)(nil), "sojahub.sojahub.rstaking.QueryDelegatorWhitelistResponse")
+	proto.RegisterType((*QueryDelegatorWhitelistSwitchRequest)(nil), "sojahub.sojahub.rstaking.QueryDelegatorWhitelistSwitchRequest")
+	proto.RegisterType((*QueryDelegatorWhitelistSwitchResponse)(nil), "sojahub.sojahub.rstaking.QueryDelegatorWhitelistSwitchResponse")
 }
 
 func init() { proto.RegisterFile("rstaking/query.proto", fileDescriptor_e22409a29fe39f84) }
@@ -602,7 +602,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -611,7 +611,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) InflationBase(ctx context.Context, in *QueryInflationBaseRequest, opts ...grpc.CallOption) (*QueryInflationBaseResponse, error) {
 	out := new(QueryInflationBaseResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/InflationBase", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/InflationBase", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -620,7 +620,7 @@ func (c *queryClient) InflationBase(ctx context.Context, in *QueryInflationBaseR
 
 func (c *queryClient) ValidatorWhitelist(ctx context.Context, in *QueryValidatorWhitelistRequest, opts ...grpc.CallOption) (*QueryValidatorWhitelistResponse, error) {
 	out := new(QueryValidatorWhitelistResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/ValidatorWhitelist", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/ValidatorWhitelist", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -629,7 +629,7 @@ func (c *queryClient) ValidatorWhitelist(ctx context.Context, in *QueryValidator
 
 func (c *queryClient) ValidatorWhitelistSwitch(ctx context.Context, in *QueryValidatorWhitelistSwitchRequest, opts ...grpc.CallOption) (*QueryValidatorWhitelistSwitchResponse, error) {
 	out := new(QueryValidatorWhitelistSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/ValidatorWhitelistSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/ValidatorWhitelistSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -638,7 +638,7 @@ func (c *queryClient) ValidatorWhitelistSwitch(ctx context.Context, in *QueryVal
 
 func (c *queryClient) DelegatorWhitelist(ctx context.Context, in *QueryDelegatorWhitelistRequest, opts ...grpc.CallOption) (*QueryDelegatorWhitelistResponse, error) {
 	out := new(QueryDelegatorWhitelistResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/DelegatorWhitelist", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/DelegatorWhitelist", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -647,7 +647,7 @@ func (c *queryClient) DelegatorWhitelist(ctx context.Context, in *QueryDelegator
 
 func (c *queryClient) DelegatorWhitelistSwitch(ctx context.Context, in *QueryDelegatorWhitelistSwitchRequest, opts ...grpc.CallOption) (*QueryDelegatorWhitelistSwitchResponse, error) {
 	out := new(QueryDelegatorWhitelistSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rstaking.Query/DelegatorWhitelistSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rstaking.Query/DelegatorWhitelistSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -707,7 +707,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/Params",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -725,7 +725,7 @@ func _Query_InflationBase_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/InflationBase",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/InflationBase",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).InflationBase(ctx, req.(*QueryInflationBaseRequest))
@@ -743,7 +743,7 @@ func _Query_ValidatorWhitelist_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/ValidatorWhitelist",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/ValidatorWhitelist",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ValidatorWhitelist(ctx, req.(*QueryValidatorWhitelistRequest))
@@ -761,7 +761,7 @@ func _Query_ValidatorWhitelistSwitch_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/ValidatorWhitelistSwitch",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/ValidatorWhitelistSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ValidatorWhitelistSwitch(ctx, req.(*QueryValidatorWhitelistSwitchRequest))
@@ -779,7 +779,7 @@ func _Query_DelegatorWhitelist_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/DelegatorWhitelist",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/DelegatorWhitelist",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).DelegatorWhitelist(ctx, req.(*QueryDelegatorWhitelistRequest))
@@ -797,7 +797,7 @@ func _Query_DelegatorWhitelistSwitch_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rstaking.Query/DelegatorWhitelistSwitch",
+		FullMethod: "/sojahub.sojahub.rstaking.Query/DelegatorWhitelistSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).DelegatorWhitelistSwitch(ctx, req.(*QueryDelegatorWhitelistSwitchRequest))
@@ -806,7 +806,7 @@ func _Query_DelegatorWhitelistSwitch_Handler(srv interface{}, ctx context.Contex
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rstaking.Query",
+	ServiceName: "sojahub.sojahub.rstaking.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/rdex/keeper"
-	"github.com/stafihub/stafihub/x/rdex/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/x/rdex/keeper"
+	"github.com/sojahub/sojahub/x/rdex/types"
 	"github.com/stretchr/testify/require"
 )
 

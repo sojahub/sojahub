@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	//"github.com/stafihub/stafihub/x/ledger/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/x/ledger/keeper"
+	//"github.com/sojahub/sojahub/x/ledger/types"
 )
 
 func setupSettings(t testing.TB) {

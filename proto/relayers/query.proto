@@ -1,23 +1,23 @@
 syntax = "proto3";
-package stafihub.stafihub.relayers;
+package sojahub.sojahub.relayers;
 
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 // this line is used by starport scaffolding # 1
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/stafihub/stafihub/x/relayers/types";
+option go_package = "github.com/sojahub/sojahub/x/relayers/types";
 
 // Query defines the gRPC querier service.
 service Query {
     // Queries a list of relayersByDenom items.
 	rpc Relayers(QueryRelayersRequest) returns (QueryRelayersResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/relayers/{arena}/{denom}";
+		option (google.api.http).get = "/sojahub/sojahub/relayers/{arena}/{denom}";
 	}
 
     // Queries a threshold by denom.
 	rpc Threshold(QueryThresholdRequest) returns (QueryThresholdResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/relayers/threshold/{arena}/{denom}";
+		option (google.api.http).get = "/sojahub/sojahub/relayers/threshold/{arena}/{denom}";
 	}
 // this line is used by starport scaffolding # 2
 }

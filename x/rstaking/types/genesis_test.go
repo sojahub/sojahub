@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 	"github.com/stretchr/testify/require"
 )
 

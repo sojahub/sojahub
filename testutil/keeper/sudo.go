@@ -10,10 +10,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/store"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/app"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/sudo/keeper"
-	"github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/sojahub/sojahub/app"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/x/sudo/keeper"
+	"github.com/sojahub/sojahub/x/sudo/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
@@ -26,8 +26,8 @@ import (
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	miningtypes "github.com/stafihub/stafihub/x/mining/types"
-	rdextypes "github.com/stafihub/stafihub/x/rdex/types"
+	miningtypes "github.com/sojahub/sojahub/x/mining/types"
+	rdextypes "github.com/sojahub/sojahub/x/rdex/types"
 )
 
 var (

@@ -149,7 +149,7 @@ type UpdateRValidatorReportProposal struct {
 	PoolAddress string                 `protobuf:"bytes,3,opt,name=poolAddress,proto3" json:"poolAddress,omitempty"`
 	PropId      string                 `protobuf:"bytes,4,opt,name=propId,proto3" json:"propId,omitempty"`
 	Cycle       *Cycle                 `protobuf:"bytes,5,opt,name=cycle,proto3" json:"cycle,omitempty"`
-	Status      UpdateRValidatorStatus `protobuf:"varint,6,opt,name=status,proto3,enum=stafihub.stafihub.rvalidator.UpdateRValidatorStatus" json:"status,omitempty"`
+	Status      UpdateRValidatorStatus `protobuf:"varint,6,opt,name=status,proto3,enum=sojahub.sojahub.rvalidator.UpdateRValidatorStatus" json:"status,omitempty"`
 }
 
 func (m *UpdateRValidatorReportProposal) Reset()         { *m = UpdateRValidatorReportProposal{} }
@@ -228,9 +228,9 @@ func (m *UpdateRValidatorReportProposal) GetStatus() UpdateRValidatorStatus {
 }
 
 func init() {
-	proto.RegisterEnum("stafihub.stafihub.rvalidator.UpdateRValidatorStatus", UpdateRValidatorStatus_name, UpdateRValidatorStatus_value)
-	proto.RegisterType((*UpdateRValidatorProposal)(nil), "stafihub.stafihub.rvalidator.UpdateRValidatorProposal")
-	proto.RegisterType((*UpdateRValidatorReportProposal)(nil), "stafihub.stafihub.rvalidator.UpdateRValidatorReportProposal")
+	proto.RegisterEnum("sojahub.sojahub.rvalidator.UpdateRValidatorStatus", UpdateRValidatorStatus_name, UpdateRValidatorStatus_value)
+	proto.RegisterType((*UpdateRValidatorProposal)(nil), "sojahub.sojahub.rvalidator.UpdateRValidatorProposal")
+	proto.RegisterType((*UpdateRValidatorReportProposal)(nil), "sojahub.sojahub.rvalidator.UpdateRValidatorReportProposal")
 }
 
 func init() { proto.RegisterFile("rvalidator/proposal.proto", fileDescriptor_1df077446bc62781) }

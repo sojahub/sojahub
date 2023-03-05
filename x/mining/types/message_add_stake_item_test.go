@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/utils"
+	"github.com/sojahub/sojahub/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

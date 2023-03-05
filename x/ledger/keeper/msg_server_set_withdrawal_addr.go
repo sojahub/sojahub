@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/ledger/types"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/sojahub/sojahub/x/ledger/types"
+	sudotypes "github.com/sojahub/sojahub/x/sudo/types"
 )
 
 func (k msgServer) SetWithdrawalAddr(goCtx context.Context, msg *types.MsgSetWithdrawalAddr) (*types.MsgSetWithdrawalAddrResponse, error) {

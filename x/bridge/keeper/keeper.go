@@ -10,8 +10,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/sojahub/sojahub/utils"
+	"github.com/sojahub/sojahub/x/bridge/types"
 )
 
 type (
@@ -290,7 +290,7 @@ func (k Keeper) GetRelayFee(ctx sdk.Context, chainId uint8) (value sdk.Coin) {
 	store := ctx.KVStore(k.storeKey)
 	b := store.Get(types.RelayFeeStoreKey(chainId))
 	if b == nil {
-		return sdk.NewCoin(utils.FisDenom, sdk.ZeroInt())
+		return sdk.NewCoin(utils.FuryDenom, sdk.ZeroInt())
 	}
 	k.cdc.MustUnmarshal(b, &value)
 	return value

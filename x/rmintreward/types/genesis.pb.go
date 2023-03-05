@@ -485,13 +485,13 @@ func (m *UserMintCount) GetCount() uint64 {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.rmintreward.GenesisState")
-	proto.RegisterType((*ActLatestCycle)(nil), "stafihub.stafihub.rmintreward.ActLatestCycle")
-	proto.RegisterType((*ActCurrentCycle)(nil), "stafihub.stafihub.rmintreward.ActCurrentCycle")
-	proto.RegisterType((*GenesisMintRewardAct)(nil), "stafihub.stafihub.rmintreward.GenesisMintRewardAct")
-	proto.RegisterType((*GenesisUserClaimInfo)(nil), "stafihub.stafihub.rmintreward.GenesisUserClaimInfo")
-	proto.RegisterType((*GenesisUserAct)(nil), "stafihub.stafihub.rmintreward.GenesisUserAct")
-	proto.RegisterType((*UserMintCount)(nil), "stafihub.stafihub.rmintreward.UserMintCount")
+	proto.RegisterType((*GenesisState)(nil), "sojahub.sojahub.rmintreward.GenesisState")
+	proto.RegisterType((*ActLatestCycle)(nil), "sojahub.sojahub.rmintreward.ActLatestCycle")
+	proto.RegisterType((*ActCurrentCycle)(nil), "sojahub.sojahub.rmintreward.ActCurrentCycle")
+	proto.RegisterType((*GenesisMintRewardAct)(nil), "sojahub.sojahub.rmintreward.GenesisMintRewardAct")
+	proto.RegisterType((*GenesisUserClaimInfo)(nil), "sojahub.sojahub.rmintreward.GenesisUserClaimInfo")
+	proto.RegisterType((*GenesisUserAct)(nil), "sojahub.sojahub.rmintreward.GenesisUserAct")
+	proto.RegisterType((*UserMintCount)(nil), "sojahub.sojahub.rmintreward.UserMintCount")
 }
 
 func init() { proto.RegisterFile("rmintreward/genesis.proto", fileDescriptor_3353bf5dc303df57) }

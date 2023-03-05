@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	rvotetypes "github.com/stafihub/stafihub/x/rvote/types"
+	rvotetypes "github.com/sojahub/sojahub/x/rvote/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

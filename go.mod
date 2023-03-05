@@ -1,4 +1,4 @@
-module github.com/stafihub/stafihub
+module github.com/sojahub/sojahub
 
 go 1.18
 

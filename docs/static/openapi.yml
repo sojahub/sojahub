@@ -20906,10 +20906,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/bridge/banned_denom_list:
+  /sojahub/sojahub/bridge/banned_denom_list:
     get:
       summary: Queries a list of BannedDenomList items.
-      operationId: StafihubStafihubBridgeBannedDenomList
+      operationId: SojahubSojahubBridgeBannedDenomList
       responses:
         '200':
           description: A successful response.
@@ -20946,10 +20946,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/bridge/chaind_ids:
+  /sojahub/sojahub/bridge/chaind_ids:
     get:
       summary: Queries a list of ChaindIds items.
-      operationId: StafihubStafihubBridgeChaindIds
+      operationId: SojahubSojahubBridgeChaindIds
       responses:
         '200':
           description: A successful response.
@@ -20981,10 +20981,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/bridge/get_deposit_count/{chainId}':
+  '/sojahub/sojahub/bridge/get_deposit_count/{chainId}':
     get:
       summary: Queries a list of GetDepositCount items.
-      operationId: StafihubStafihubBridgeGetDepositCount
+      operationId: SojahubSojahubBridgeGetDepositCount
       responses:
         '200':
           description: A successful response.
@@ -21020,10 +21020,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/bridge/params:
+  /sojahub/sojahub/bridge/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubBridgeParams
+      operationId: SojahubSojahubBridgeParams
       responses:
         '200':
           description: A successful response.
@@ -21056,10 +21056,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
+  '/sojahub/sojahub/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
     get:
       summary: Queries a list of ProposalDetail items.
-      operationId: StafihubStafihubBridgeProposalDetail
+      operationId: SojahubSojahubBridgeProposalDetail
       responses:
         '200':
           description: A successful response.
@@ -21125,10 +21125,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/bridge/relay_fee/{chainId}':
+  '/sojahub/sojahub/bridge/relay_fee/{chainId}':
     get:
       summary: Queries a list of RelayFee items.
-      operationId: StafihubStafihubBridgeRelayFee
+      operationId: SojahubSojahubBridgeRelayFee
       responses:
         '200':
           description: A successful response.
@@ -21176,10 +21176,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/bridge/relay_fee_receiver:
+  /sojahub/sojahub/bridge/relay_fee_receiver:
     get:
       summary: Queries a list of RelayFeeReceiver items.
-      operationId: StafihubStafihubBridgeRelayFeeReceiver
+      operationId: SojahubSojahubBridgeRelayFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -21208,10 +21208,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/bridge/resourceid_to_denoms:
+  /sojahub/sojahub/bridge/resourceid_to_denoms:
     get:
       summary: Queries a list of ResourceidToDenoms items.
-      operationId: StafihubStafihubBridgeResourceidToDenoms
+      operationId: SojahubSojahubBridgeResourceidToDenoms
       responses:
         '200':
           description: A successful response.
@@ -21254,10 +21254,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/claim/claim_switch/{round}':
+  '/sojahub/sojahub/claim/claim_switch/{round}':
     get:
       summary: Queries a list of ClaimSwitch items.
-      operationId: StafihubStafihubClaimClaimSwitch
+      operationId: SojahubSojahubClaimClaimSwitch
       responses:
         '200':
           description: A successful response.
@@ -21292,10 +21292,10 @@ paths:
           format: uint64
       tags:
         - Query
-  '/stafihub/stafihub/claim/is_claimed/{round}/{index}':
+  '/sojahub/sojahub/claim/is_claimed/{round}/{index}':
     get:
       summary: Queries a list of IsClaimed items.
-      operationId: StafihubStafihubClaimIsClaimed
+      operationId: SojahubSojahubClaimIsClaimed
       responses:
         '200':
           description: A successful response.
@@ -21335,10 +21335,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/claim/params:
+  /sojahub/sojahub/claim/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubClaimParams
+      operationId: SojahubSojahubClaimParams
       responses:
         '200':
           description: A successful response.
@@ -21371,10 +21371,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/ledger/bonded_pools_by_denom/{denom}':
+  '/sojahub/sojahub/ledger/bonded_pools_by_denom/{denom}':
     get:
       summary: Queries a list of bondedPoolsByDenom items.
-      operationId: StafihubStafihubLedgerBondedPoolsByDenom
+      operationId: SojahubSojahubLedgerBondedPoolsByDenom
       responses:
         '200':
           description: A successful response.
@@ -21577,10 +21577,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/era_exchange_rate/{denom}/{era}':
+  '/sojahub/sojahub/ledger/era_exchange_rate/{denom}/{era}':
     get:
       summary: Queries a list of getEraExchangeRate items.
-      operationId: StafihubStafihubLedgerGetEraExchangeRate
+      operationId: SojahubSojahubLedgerGetEraExchangeRate
       responses:
         '200':
           description: A successful response.
@@ -21794,10 +21794,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/era_exchange_rates_by_denom/{denom}':
+  '/sojahub/sojahub/ledger/era_exchange_rates_by_denom/{denom}':
     get:
       summary: Queries a list of eraExchangeRatesByDenom items.
-      operationId: StafihubStafihubLedgerEraExchangeRatesByDenom
+      operationId: SojahubSojahubLedgerEraExchangeRatesByDenom
       responses:
         '200':
           description: A successful response.
@@ -22008,10 +22008,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/exchange_rate/{denom}':
+  '/sojahub/sojahub/ledger/exchange_rate/{denom}':
     get:
       summary: Queries a list of getExchangeRate items.
-      operationId: StafihubStafihubLedgerGetExchangeRate
+      operationId: SojahubSojahubLedgerGetExchangeRate
       responses:
         '200':
           description: A successful response.
@@ -22217,10 +22217,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/exchange_rate_all:
+  /sojahub/sojahub/ledger/exchange_rate_all:
     get:
       summary: Queries a list of exchangeRateAll items.
-      operationId: StafihubStafihubLedgerExchangeRateAll
+      operationId: SojahubSojahubLedgerExchangeRateAll
       responses:
         '200':
           description: A successful response.
@@ -22423,10 +22423,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_bond_pipeline/{denom}/{pool}':
+  '/sojahub/sojahub/ledger/get_bond_pipeline/{denom}/{pool}':
     get:
       summary: Queries a list of getBondPipeline items.
-      operationId: StafihubStafihubLedgerGetBondPipeline
+      operationId: SojahubSojahubLedgerGetBondPipeline
       responses:
         '200':
           description: A successful response.
@@ -22645,10 +22645,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_bond_record/{denom}/{txhash}':
+  '/sojahub/sojahub/ledger/get_bond_record/{denom}/{txhash}':
     get:
       summary: Queries a list of getBondRecord items.
-      operationId: StafihubStafihubLedgerGetBondRecord
+      operationId: SojahubSojahubLedgerGetBondRecord
       responses:
         '200':
           description: A successful response.
@@ -22874,10 +22874,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_chain_era/{denom}':
+  '/sojahub/sojahub/ledger/get_chain_era/{denom}':
     get:
       summary: Queries a list of getChainEra items.
-      operationId: StafihubStafihubLedgerGetChainEra
+      operationId: SojahubSojahubLedgerGetChainEra
       responses:
         '200':
           description: A successful response.
@@ -23079,10 +23079,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_current_era_snapshot/{denom}':
+  '/sojahub/sojahub/ledger/get_current_era_snapshot/{denom}':
     get:
       summary: Queries a list of getCurrentEraSnapshot items.
-      operationId: StafihubStafihubLedgerGetCurrentEraSnapshot
+      operationId: SojahubSojahubLedgerGetCurrentEraSnapshot
       responses:
         '200':
           description: A successful response.
@@ -23285,10 +23285,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_era_snapshot/{denom}/{era}':
+  '/sojahub/sojahub/ledger/get_era_snapshot/{denom}/{era}':
     get:
       summary: Queries a list of getEraSnapshot items.
-      operationId: StafihubStafihubLedgerGetEraSnapshot
+      operationId: SojahubSojahubLedgerGetEraSnapshot
       responses:
         '200':
           description: A successful response.
@@ -23496,10 +23496,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_era_unbond_limit/{denom}':
+  '/sojahub/sojahub/ledger/get_era_unbond_limit/{denom}':
     get:
       summary: Queries a list of getEraUnbondLimit items.
-      operationId: StafihubStafihubLedgerGetEraUnbondLimit
+      operationId: SojahubSojahubLedgerGetEraUnbondLimit
       responses:
         '200':
           description: A successful response.
@@ -23701,10 +23701,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_pool_detail/{denom}/{pool}':
+  '/sojahub/sojahub/ledger/get_pool_detail/{denom}/{pool}':
     get:
       summary: Queries a list of getPoolDetail items.
-      operationId: StafihubStafihubLedgerGetPoolDetail
+      operationId: SojahubSojahubLedgerGetPoolDetail
       responses:
         '200':
           description: A successful response.
@@ -23928,10 +23928,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_r_params/{denom}':
+  '/sojahub/sojahub/ledger/get_r_params/{denom}':
     get:
       summary: Queries a list of GetRParams items.
-      operationId: StafihubStafihubLedgerGetRParams
+      operationId: SojahubSojahubLedgerGetRParams
       responses:
         '200':
           description: A successful response.
@@ -24148,10 +24148,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_signature:
+  /sojahub/sojahub/ledger/get_signature:
     get:
       summary: Queries a list of getSignature items.
-      operationId: StafihubStafihubLedgerGetSignature
+      operationId: SojahubSojahubLedgerGetSignature
       responses:
         '200':
           description: A successful response.
@@ -24400,10 +24400,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_snapshot/{shotId}':
+  '/sojahub/sojahub/ledger/get_snapshot/{shotId}':
     get:
       summary: Queries a list of getSnapshot items.
-      operationId: StafihubStafihubLedgerGetSnapshot
+      operationId: SojahubSojahubLedgerGetSnapshot
       responses:
         '200':
           description: A successful response.
@@ -24630,10 +24630,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_staking_reward_commission:
+  /sojahub/sojahub/ledger/get_staking_reward_commission:
     get:
       summary: Queries a list of getCommission items.
-      operationId: StafihubStafihubLedgerGetStakingRewardCommission
+      operationId: SojahubSojahubLedgerGetStakingRewardCommission
       responses:
         '200':
           description: A successful response.
@@ -24834,10 +24834,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_total_expected_active/{denom}/{era}':
+  '/sojahub/sojahub/ledger/get_total_expected_active/{denom}/{era}':
     get:
       summary: Queries a list of getTotalExpectedActive items.
-      operationId: StafihubStafihubLedgerGetTotalExpectedActive
+      operationId: SojahubSojahubLedgerGetTotalExpectedActive
       responses:
         '200':
           description: A successful response.
@@ -25043,10 +25043,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_unbond_commission:
+  /sojahub/sojahub/ledger/get_unbond_commission:
     get:
       summary: Queries a list of getUnbondCommission items.
-      operationId: StafihubStafihubLedgerGetUnbondCommission
+      operationId: SojahubSojahubLedgerGetUnbondCommission
       responses:
         '200':
           description: A successful response.
@@ -25247,10 +25247,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_unbond_relay_fee/{denom}':
+  '/sojahub/sojahub/ledger/get_unbond_relay_fee/{denom}':
     get:
       summary: Queries a list of getUnbondFee items.
-      operationId: StafihubStafihubLedgerGetUnbondRelayFee
+      operationId: SojahubSojahubLedgerGetUnbondRelayFee
       responses:
         '200':
           description: A successful response.
@@ -25469,10 +25469,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/ica_pool_list/{denom}':
+  '/sojahub/sojahub/ledger/ica_pool_list/{denom}':
     get:
       summary: Queries a list of IcaPoolList items.
-      operationId: StafihubStafihubLedgerIcaPoolList
+      operationId: SojahubSojahubLedgerIcaPoolList
       responses:
         '200':
           description: A successful response.
@@ -25728,10 +25728,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/interchain_tx_status/{propId}':
+  '/sojahub/sojahub/ledger/interchain_tx_status/{propId}':
     get:
       summary: Queries a list of InterchainTxStatus items.
-      operationId: StafihubStafihubLedgerInterchainTxStatus
+      operationId: SojahubSojahubLedgerInterchainTxStatus
       responses:
         '200':
           description: A successful response.
@@ -25938,10 +25938,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
+  '/sojahub/sojahub/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondNextSequence items.
-      operationId: StafihubStafihubLedgerPoolUnbondNextSequence
+      operationId: SojahubSojahubLedgerPoolUnbondNextSequence
       responses:
         '200':
           description: A successful response.
@@ -26152,10 +26152,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
+  '/sojahub/sojahub/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondings items.
-      operationId: StafihubStafihubLedgerPoolUnbondings
+      operationId: SojahubSojahubLedgerPoolUnbondings
       responses:
         '200':
           description: A successful response.
@@ -26374,10 +26374,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/ledger/protocol_fee_receiver:
+  /sojahub/sojahub/ledger/protocol_fee_receiver:
     get:
       summary: Queries a list of getReceiver items.
-      operationId: StafihubStafihubLedgerGetProtocolFeeReceiver
+      operationId: SojahubSojahubLedgerGetProtocolFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -26573,10 +26573,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/relay_fee_receiver/{denom}':
+  '/sojahub/sojahub/ledger/relay_fee_receiver/{denom}':
     get:
       summary: Queries a list of RelayFeeReceiver items.
-      operationId: StafihubStafihubLedgerRelayFeeReceiver
+      operationId: SojahubSojahubLedgerRelayFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -26777,10 +26777,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/total_protocol_fee:
+  /sojahub/sojahub/ledger/total_protocol_fee:
     get:
       summary: Queries a list of TotalFeeList items.
-      operationId: StafihubStafihubLedgerTotalProtocolFee
+      operationId: SojahubSojahubLedgerTotalProtocolFee
       responses:
         '200':
           description: A successful response.
@@ -26983,10 +26983,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/unbond_switch/{denom}':
+  '/sojahub/sojahub/ledger/unbond_switch/{denom}':
     get:
       summary: Queries a list of UnbondSwitch items.
-      operationId: StafihubStafihubLedgerUnbondSwitch
+      operationId: SojahubSojahubLedgerUnbondSwitch
       responses:
         '200':
           description: A successful response.
@@ -27187,10 +27187,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/mining/max_reward_pool_number:
+  /sojahub/sojahub/mining/max_reward_pool_number:
     get:
       summary: Queries a list of MaxRewardPoolNumber items.
-      operationId: StafihubStafihubMiningMaxRewardPoolNumber
+      operationId: SojahubSojahubMiningMaxRewardPoolNumber
       responses:
         '200':
           description: A successful response.
@@ -27220,10 +27220,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/max_stake_item_number:
+  /sojahub/sojahub/mining/max_stake_item_number:
     get:
       summary: Queries a list of MaxStakeItemNumber items.
-      operationId: StafihubStafihubMiningMaxStakeItemNumber
+      operationId: SojahubSojahubMiningMaxStakeItemNumber
       responses:
         '200':
           description: A successful response.
@@ -27253,10 +27253,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/mining_provider_list:
+  /sojahub/sojahub/mining/mining_provider_list:
     get:
       summary: Queries a list of MiningProviderList items.
-      operationId: StafihubStafihubMiningMiningProviderList
+      operationId: SojahubSojahubMiningMiningProviderList
       responses:
         '200':
           description: A successful response.
@@ -27287,10 +27287,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/params:
+  /sojahub/sojahub/mining/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubMiningParams
+      operationId: SojahubSojahubMiningParams
       responses:
         '200':
           description: A successful response.
@@ -27323,10 +27323,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/provider_switch:
+  /sojahub/sojahub/mining/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
-      operationId: StafihubStafihubMiningProviderSwitch
+      operationId: SojahubSojahubMiningProviderSwitch
       responses:
         '200':
           description: A successful response.
@@ -27355,10 +27355,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/reward_token_list:
+  /sojahub/sojahub/mining/reward_token_list:
     get:
       summary: Queries a list of RewardTokenList items.
-      operationId: StafihubStafihubMiningRewardTokenList
+      operationId: SojahubSojahubMiningRewardTokenList
       responses:
         '200':
           description: A successful response.
@@ -27396,10 +27396,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/stake_item_list:
+  /sojahub/sojahub/mining/stake_item_list:
     get:
       summary: Queries a list of StakeItemList items.
-      operationId: StafihubStafihubMiningStakeItemList
+      operationId: SojahubSojahubMiningStakeItemList
       responses:
         '200':
           description: A successful response.
@@ -27451,10 +27451,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_pool_info/{stakePoolIndex}':
+  '/sojahub/sojahub/mining/stake_pool_info/{stakePoolIndex}':
     get:
       summary: Queries a list of StakePoolInfo items.
-      operationId: StafihubStafihubMiningStakePoolInfo
+      operationId: SojahubSojahubMiningStakePoolInfo
       responses:
         '200':
           description: A successful response.
@@ -27533,10 +27533,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/mining/stake_pool_list:
+  /sojahub/sojahub/mining/stake_pool_list:
     get:
       summary: Queries a list of StakePoolList items.
-      operationId: StafihubStafihubMiningStakePoolList
+      operationId: SojahubSojahubMiningStakePoolList
       responses:
         '200':
           description: A successful response.
@@ -27611,10 +27611,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/sojahub/sojahub/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeRecord items.
-      operationId: StafihubStafihubMiningStakeRecord
+      operationId: SojahubSojahubMiningStakeRecord
       responses:
         '200':
           description: A successful response.
@@ -27696,10 +27696,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
+  '/sojahub/sojahub/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordCount items.
-      operationId: StafihubStafihubMiningStakeRecordCount
+      operationId: SojahubSojahubMiningStakeRecordCount
       responses:
         '200':
           description: A successful response.
@@ -27739,10 +27739,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
+  '/sojahub/sojahub/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordList items.
-      operationId: StafihubStafihubMiningStakeRecordList
+      operationId: SojahubSojahubMiningStakeRecordList
       responses:
         '200':
           description: A successful response.
@@ -27821,10 +27821,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/sojahub/sojahub/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeReward items.
-      operationId: StafihubStafihubMiningStakeReward
+      operationId: SojahubSojahubMiningStakeReward
       responses:
         '200':
           description: A successful response.
@@ -27883,10 +27883,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/rbank/address_prefix/{denom}':
+  '/sojahub/sojahub/rbank/address_prefix/{denom}':
     get:
       summary: Queries a list of AddressPrefix items.
-      operationId: StafihubStafihubRbankAddressPrefix
+      operationId: SojahubSojahubRbankAddressPrefix
       responses:
         '200':
           description: A successful response.
@@ -27922,10 +27922,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rbank/params:
+  /sojahub/sojahub/rbank/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRbankParams
+      operationId: SojahubSojahubRbankParams
       responses:
         '200':
           description: A successful response.
@@ -27958,10 +27958,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/params:
+  /sojahub/sojahub/rdex/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRdexParams
+      operationId: SojahubSojahubRdexParams
       responses:
         '200':
           description: A successful response.
@@ -27994,10 +27994,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/pool_creator_list:
+  /sojahub/sojahub/rdex/pool_creator_list:
     get:
       summary: Queries a list of PoolCreatorList items.
-      operationId: StafihubStafihubRdexPoolCreatorList
+      operationId: SojahubSojahubRdexPoolCreatorList
       responses:
         '200':
           description: A successful response.
@@ -28028,10 +28028,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/provider_list:
+  /sojahub/sojahub/rdex/provider_list:
     get:
       summary: Queries a list of ProviderList items.
-      operationId: StafihubStafihubRdexProviderList
+      operationId: SojahubSojahubRdexProviderList
       responses:
         '200':
           description: A successful response.
@@ -28062,10 +28062,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/provider_switch:
+  /sojahub/sojahub/rdex/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
-      operationId: StafihubStafihubRdexProviderSwitch
+      operationId: SojahubSojahubRdexProviderSwitch
       responses:
         '200':
           description: A successful response.
@@ -28094,10 +28094,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rdex/swap_pool_info/{lpDenom}':
+  '/sojahub/sojahub/rdex/swap_pool_info/{lpDenom}':
     get:
       summary: Queries a list of SwapPoolInfo items.
-      operationId: StafihubStafihubRdexSwapPoolInfo
+      operationId: SojahubSojahubRdexSwapPoolInfo
       responses:
         '200':
           description: A successful response.
@@ -28180,10 +28180,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rdex/swap_pool_list:
+  /sojahub/sojahub/rdex/swap_pool_list:
     get:
       summary: Queries a list of SwapPoolList items.
-      operationId: StafihubStafihubRdexSwapPoolList
+      operationId: SojahubSojahubRdexSwapPoolList
       responses:
         '200':
           description: A successful response.
@@ -28263,10 +28263,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/relayers/threshold/{arena}/{denom}':
+  '/sojahub/sojahub/relayers/threshold/{arena}/{denom}':
     get:
       summary: Queries a threshold by denom.
-      operationId: StafihubStafihubRelayersThreshold
+      operationId: SojahubSojahubRelayersThreshold
       responses:
         '200':
           description: A successful response.
@@ -28305,10 +28305,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/relayers/{arena}/{denom}':
+  '/sojahub/sojahub/relayers/{arena}/{denom}':
     get:
       summary: Queries a list of relayersByDenom items.
-      operationId: StafihubStafihubRelayersRelayers
+      operationId: SojahubSojahubRelayersRelayers
       responses:
         '200':
           description: A successful response.
@@ -28348,10 +28348,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_current_cycle/{denom}':
+  '/sojahub/sojahub/rmintreward/act_current_cycle/{denom}':
     get:
       summary: Queries a list of ActCurrentCycle items.
-      operationId: StafihubStafihubRmintrewardActCurrentCycle
+      operationId: SojahubSojahubRmintrewardActCurrentCycle
       responses:
         '200':
           description: A successful response.
@@ -28386,10 +28386,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_detail/{denom}/{cycle}':
+  '/sojahub/sojahub/rmintreward/act_detail/{denom}/{cycle}':
     get:
       summary: Queries a list of ActDetail items.
-      operationId: StafihubStafihubRmintrewardActDetail
+      operationId: SojahubSojahubRmintrewardActDetail
       responses:
         '200':
           description: A successful response.
@@ -28457,10 +28457,10 @@ paths:
           format: uint64
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_latest_cycle/{denom}':
+  '/sojahub/sojahub/rmintreward/act_latest_cycle/{denom}':
     get:
       summary: Queries a list of ActLatestCycle items.
-      operationId: StafihubStafihubRmintrewardActLatestCycle
+      operationId: SojahubSojahubRmintrewardActLatestCycle
       responses:
         '200':
           description: A successful response.
@@ -28495,10 +28495,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
+  '/sojahub/sojahub/rmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
     get:
       summary: Queries a list of ClaimInfoDetail items.
-      operationId: StafihubStafihubRmintrewardClaimInfoDetail
+      operationId: SojahubSojahubRmintrewardClaimInfoDetail
       responses:
         '200':
           description: A successful response.
@@ -28568,10 +28568,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/rmintreward/params:
+  /sojahub/sojahub/rmintreward/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRmintrewardParams
+      operationId: SojahubSojahubRmintrewardParams
       responses:
         '200':
           description: A successful response.
@@ -28604,10 +28604,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/user_acts/{address}/{denom}':
+  '/sojahub/sojahub/rmintreward/user_acts/{address}/{denom}':
     get:
       summary: Queries a list of UserActs items.
-      operationId: StafihubStafihubRmintrewardUserActs
+      operationId: SojahubSojahubRmintrewardUserActs
       responses:
         '200':
           description: A successful response.
@@ -28651,10 +28651,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/user_mint_count/{address}/{denom}/{cycle}':
+  '/sojahub/sojahub/rmintreward/user_mint_count/{address}/{denom}/{cycle}':
     get:
       summary: Queries a list of UserMintCount items.
-      operationId: StafihubStafihubRmintrewardUserMintCount
+      operationId: SojahubSojahubRmintrewardUserMintCount
       responses:
         '200':
           description: A successful response.
@@ -28698,10 +28698,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/rstaking/delegator_whitelist:
+  /sojahub/sojahub/rstaking/delegator_whitelist:
     get:
       summary: Queries a list of DelegatorWhitelist items.
-      operationId: StafihubStafihubRstakingDelegatorWhitelist
+      operationId: SojahubSojahubRstakingDelegatorWhitelist
       responses:
         '200':
           description: A successful response.
@@ -28732,10 +28732,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/delegator_whitelist_switch:
+  /sojahub/sojahub/rstaking/delegator_whitelist_switch:
     get:
       summary: Queries a list of DelegatorWhitelistSwitch items.
-      operationId: StafihubStafihubRstakingDelegatorWhitelistSwitch
+      operationId: SojahubSojahubRstakingDelegatorWhitelistSwitch
       responses:
         '200':
           description: A successful response.
@@ -28764,10 +28764,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/inflation_base:
+  /sojahub/sojahub/rstaking/inflation_base:
     get:
       summary: Queries a list of InflationBase items.
-      operationId: StafihubStafihubRstakingInflationBase
+      operationId: SojahubSojahubRstakingInflationBase
       responses:
         '200':
           description: A successful response.
@@ -28796,10 +28796,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/params:
+  /sojahub/sojahub/rstaking/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRstakingParams
+      operationId: SojahubSojahubRstakingParams
       responses:
         '200':
           description: A successful response.
@@ -28832,10 +28832,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/validator_whitelist:
+  /sojahub/sojahub/rstaking/validator_whitelist:
     get:
       summary: Queries a list of ValidatorWhitelist items.
-      operationId: StafihubStafihubRstakingValidatorWhitelist
+      operationId: SojahubSojahubRstakingValidatorWhitelist
       responses:
         '200':
           description: A successful response.
@@ -28866,10 +28866,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/validator_whitelist_switch:
+  /sojahub/sojahub/rstaking/validator_whitelist_switch:
     get:
       summary: Queries a list of WhitelistSwitch items.
-      operationId: StafihubStafihubRstakingValidatorWhitelistSwitch
+      operationId: SojahubSojahubRstakingValidatorWhitelistSwitch
       responses:
         '200':
           description: A successful response.
@@ -28898,10 +28898,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/cycle_seconds/{denom}':
+  '/sojahub/sojahub/rvalidator/cycle_seconds/{denom}':
     get:
       summary: Queries a list of CycleSeconds items.
-      operationId: StafihubStafihubRvalidatorCycleSeconds
+      operationId: SojahubSojahubRvalidatorCycleSeconds
       responses:
         '200':
           description: A successful response.
@@ -28944,10 +28944,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
+  '/sojahub/sojahub/rvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestDealedCycle items.
-      operationId: StafihubStafihubRvalidatorLatestDealedCycle
+      operationId: SojahubSojahubRvalidatorLatestDealedCycle
       responses:
         '200':
           description: A successful response.
@@ -28996,10 +28996,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/latest_voted_cycle/{denom}/{poolAddress}':
+  '/sojahub/sojahub/rvalidator/latest_voted_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestVotedCycle items.
-      operationId: StafihubStafihubRvalidatorLatestVotedCycle
+      operationId: SojahubSojahubRvalidatorLatestVotedCycle
       responses:
         '200':
           description: A successful response.
@@ -29048,10 +29048,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rvalidator/params:
+  /sojahub/sojahub/rvalidator/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRvalidatorParams
+      operationId: SojahubSojahubRvalidatorParams
       responses:
         '200':
           description: A successful response.
@@ -29084,10 +29084,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/r_validator_list/{denom}/{poolAddress}':
+  '/sojahub/sojahub/rvalidator/r_validator_list/{denom}/{poolAddress}':
     get:
       summary: Queries a list of RValidatorList items.
-      operationId: StafihubStafihubRvalidatorRValidatorList
+      operationId: SojahubSojahubRvalidatorRValidatorList
       responses:
         '200':
           description: A successful response.
@@ -29127,10 +29127,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/shuffle_seconds/{denom}':
+  '/sojahub/sojahub/rvalidator/shuffle_seconds/{denom}':
     get:
       summary: Queries a list of ShuffleSeconds items.
-      operationId: StafihubStafihubRvalidatorShuffleSeconds
+      operationId: SojahubSojahubRvalidatorShuffleSeconds
       responses:
         '200':
           description: A successful response.
@@ -29173,10 +29173,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvote/get_proposal/{propId}':
+  '/sojahub/sojahub/rvote/get_proposal/{propId}':
     get:
       summary: Queries a list of getProposal items.
-      operationId: StafihubStafihubRvoteGetProposal
+      operationId: SojahubSojahubRvoteGetProposal
       responses:
         '200':
           description: A successful response.
@@ -29377,10 +29377,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rvote/get_proposal_life:
+  /sojahub/sojahub/rvote/get_proposal_life:
     get:
       summary: Queries a list of getProposalLife items.
-      operationId: StafihubStafihubRvoteGetProposalLife
+      operationId: SojahubSojahubRvoteGetProposalLife
       responses:
         '200':
           description: A successful response.
@@ -29577,10 +29577,10 @@ paths:
                         }
       tags:
         - Query
-  /stafihub/stafihub/sudo/admin:
+  /sojahub/sojahub/sudo/admin:
     get:
       summary: Queries a list of admin items.
-      operationId: StafihubStafihubSudoAdmin
+      operationId: SojahubSojahubSudoAdmin
       responses:
         '200':
           description: A successful response.
@@ -45373,7 +45373,7 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
-  stafihub.stafihub.bridge.BannedDenom:
+  sojahub.sojahub.bridge.BannedDenom:
     type: object
     properties:
       chainId:
@@ -45381,35 +45381,35 @@ definitions:
         format: int64
       denom:
         type: string
-  stafihub.stafihub.bridge.DenomType:
+  sojahub.sojahub.bridge.DenomType:
     type: string
     enum:
       - UNSPECIFIED
       - NATIVE
       - EXTERNAL
     default: UNSPECIFIED
-  stafihub.stafihub.bridge.MsgAddBannedDenomResponse:
+  sojahub.sojahub.bridge.MsgAddBannedDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgAddChainIdResponse:
+  sojahub.sojahub.bridge.MsgAddChainIdResponse:
     type: object
-  stafihub.stafihub.bridge.MsgDepositResponse:
+  sojahub.sojahub.bridge.MsgDepositResponse:
     type: object
-  stafihub.stafihub.bridge.MsgRmBannedDenomResponse:
+  sojahub.sojahub.bridge.MsgRmBannedDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgRmChainIdResponse:
+  sojahub.sojahub.bridge.MsgRmChainIdResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetRelayFeeReceiverResponse:
+  sojahub.sojahub.bridge.MsgSetRelayFeeReceiverResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetRelayFeeResponse:
+  sojahub.sojahub.bridge.MsgSetRelayFeeResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetResourceidToDenomResponse:
+  sojahub.sojahub.bridge.MsgSetResourceidToDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgVoteProposalResponse:
+  sojahub.sojahub.bridge.MsgVoteProposalResponse:
     type: object
-  stafihub.stafihub.bridge.Params:
+  sojahub.sojahub.bridge.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.bridge.Proposal:
+  sojahub.sojahub.bridge.Proposal:
     type: object
     properties:
       content:
@@ -45425,14 +45425,14 @@ definitions:
         type: array
         items:
           type: string
-  stafihub.stafihub.bridge.ProposalContent:
+  sojahub.sojahub.bridge.ProposalContent:
     type: object
     properties:
       amount:
         type: string
       receiver:
         type: string
-  stafihub.stafihub.bridge.QueryBannedDenomListResponse:
+  sojahub.sojahub.bridge.QueryBannedDenomListResponse:
     type: object
     properties:
       list:
@@ -45445,7 +45445,7 @@ definitions:
               format: int64
             denom:
               type: string
-  stafihub.stafihub.bridge.QueryChaindIdsResponse:
+  sojahub.sojahub.bridge.QueryChaindIdsResponse:
     type: object
     properties:
       chainId:
@@ -45453,20 +45453,20 @@ definitions:
         items:
           type: integer
           format: int64
-  stafihub.stafihub.bridge.QueryGetDepositCountResponse:
+  sojahub.sojahub.bridge.QueryGetDepositCountResponse:
     type: object
     properties:
       count:
         type: integer
         format: int64
-  stafihub.stafihub.bridge.QueryParamsResponse:
+  sojahub.sojahub.bridge.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.bridge.QueryProposalDetailResponse:
+  sojahub.sojahub.bridge.QueryProposalDetailResponse:
     type: object
     properties:
       proposal:
@@ -45485,12 +45485,12 @@ definitions:
             type: array
             items:
               type: string
-  stafihub.stafihub.bridge.QueryRelayFeeReceiverResponse:
+  sojahub.sojahub.bridge.QueryRelayFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.bridge.QueryRelayFeeResponse:
+  sojahub.sojahub.bridge.QueryRelayFeeResponse:
     type: object
     properties:
       value:
@@ -45505,7 +45505,7 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.bridge.QueryResourceidToDenomsResponse:
+  sojahub.sojahub.bridge.QueryResourceidToDenomsResponse:
     type: object
     properties:
       resourceidToDenoms:
@@ -45524,7 +45524,7 @@ definitions:
                 - NATIVE
                 - EXTERNAL
               default: UNSPECIFIED
-  stafihub.stafihub.bridge.ResourceIdToDenom:
+  sojahub.sojahub.bridge.ResourceIdToDenom:
     type: object
     properties:
       resourceId:
@@ -45538,37 +45538,37 @@ definitions:
           - NATIVE
           - EXTERNAL
         default: UNSPECIFIED
-  stafihub.stafihub.claim.MsgClaimResponse:
+  sojahub.sojahub.claim.MsgClaimResponse:
     type: object
-  stafihub.stafihub.claim.MsgProvideTokenResponse:
+  sojahub.sojahub.claim.MsgProvideTokenResponse:
     type: object
-  stafihub.stafihub.claim.MsgSetMerkleRootResponse:
+  sojahub.sojahub.claim.MsgSetMerkleRootResponse:
     type: object
-  stafihub.stafihub.claim.MsgToggleClaimSwitchResponse:
+  sojahub.sojahub.claim.MsgToggleClaimSwitchResponse:
     type: object
-  stafihub.stafihub.claim.MsgWithdrawTokenResponse:
+  sojahub.sojahub.claim.MsgWithdrawTokenResponse:
     type: object
-  stafihub.stafihub.claim.Params:
+  sojahub.sojahub.claim.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.claim.QueryClaimSwitchResponse:
+  sojahub.sojahub.claim.QueryClaimSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.claim.QueryIsClaimedResponse:
+  sojahub.sojahub.claim.QueryIsClaimedResponse:
     type: object
     properties:
       isClaimed:
         type: boolean
-  stafihub.stafihub.claim.QueryParamsResponse:
+  sojahub.sojahub.claim.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.ledger.BondPipeline:
+  sojahub.sojahub.ledger.BondPipeline:
     type: object
     properties:
       denom:
@@ -45584,7 +45584,7 @@ definitions:
             type: string
           active:
             type: string
-  stafihub.stafihub.ledger.BondRecord:
+  sojahub.sojahub.ledger.BondRecord:
     type: object
     properties:
       denom:
@@ -45607,7 +45607,7 @@ definitions:
           - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
           - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
         default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.BondSnapshot:
+  sojahub.sojahub.ledger.BondSnapshot:
     type: object
     properties:
       denom:
@@ -45635,7 +45635,7 @@ definitions:
           - TRANSFER_SKIPPED
           - TRANSFER_REPORTED
         default: ERA_UPDATED
-  stafihub.stafihub.ledger.EraExchangeRate:
+  sojahub.sojahub.ledger.EraExchangeRate:
     type: object
     properties:
       denom:
@@ -45645,14 +45645,14 @@ definitions:
         format: int64
       value:
         type: string
-  stafihub.stafihub.ledger.ExchangeRate:
+  sojahub.sojahub.ledger.ExchangeRate:
     type: object
     properties:
       denom:
         type: string
       value:
         type: string
-  stafihub.stafihub.ledger.IcaAccount:
+  sojahub.sojahub.ledger.IcaAccount:
     type: object
     properties:
       owner:
@@ -45671,7 +45671,7 @@ definitions:
         type: string
       hostChannelId:
         type: string
-  stafihub.stafihub.ledger.IcaPoolDetail:
+  sojahub.sojahub.ledger.IcaPoolDetail:
     type: object
     properties:
       denom:
@@ -45726,7 +45726,7 @@ definitions:
             type: string
           hostChannelId:
             type: string
-  stafihub.stafihub.ledger.IcaPoolStatus:
+  sojahub.sojahub.ledger.IcaPoolStatus:
     type: string
     enum:
       - ICA_POOL_STATUS_UNSPECIFIED
@@ -45735,7 +45735,7 @@ definitions:
       - ICA_POOL_STATUS_CREATE_TWO
       - ICA_POOL_STATUS_SET_WITHDRAWAL
     default: ICA_POOL_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.InterchainTxStatus:
+  sojahub.sojahub.ledger.InterchainTxStatus:
     type: string
     enum:
       - INTERCHAIN_TX_STATUS_UNSPECIFIED
@@ -45743,7 +45743,7 @@ definitions:
       - INTERCHAIN_TX_STATUS_SUCCESS
       - INTERCHAIN_TX_STATUS_FAILED
     default: INTERCHAIN_TX_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.LinkChunk:
+  sojahub.sojahub.ledger.LinkChunk:
     type: object
     properties:
       bond:
@@ -45752,7 +45752,7 @@ definitions:
         type: string
       active:
         type: string
-  stafihub.stafihub.ledger.LiquidityBondState:
+  sojahub.sojahub.ledger.LiquidityBondState:
     type: string
     enum:
       - LIQUIDITY_BOND_STATE_VERIFY_OK
@@ -45762,53 +45762,53 @@ definitions:
       - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
       - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
     default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.MsgClearCurrentEraSnapShotsResponse:
+  sojahub.sojahub.ledger.MsgClearCurrentEraSnapShotsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgInitPoolResponse:
+  sojahub.sojahub.ledger.MsgInitPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgLiquidityUnbondResponse:
+  sojahub.sojahub.ledger.MsgLiquidityUnbondResponse:
     type: object
-  stafihub.stafihub.ledger.MsgMigrateInitResponse:
+  sojahub.sojahub.ledger.MsgMigrateInitResponse:
     type: object
-  stafihub.stafihub.ledger.MsgMigrateUnbondingsResponse:
+  sojahub.sojahub.ledger.MsgMigrateUnbondingsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgRegisterIcaPoolResponse:
+  sojahub.sojahub.ledger.MsgRegisterIcaPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgRmBondedPoolResponse:
+  sojahub.sojahub.ledger.MsgRmBondedPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetEraSecondsResponse:
+  sojahub.sojahub.ledger.MsgSetEraSecondsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetEraUnbondLimitResponse:
+  sojahub.sojahub.ledger.MsgSetEraUnbondLimitResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetLeastBondResponse:
+  sojahub.sojahub.ledger.MsgSetLeastBondResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetPoolDetailResponse:
+  sojahub.sojahub.ledger.MsgSetPoolDetailResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetPoolStatusResponse:
+  sojahub.sojahub.ledger.MsgSetPoolStatusResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetProtocolFeeReceiverResponse:
+  sojahub.sojahub.ledger.MsgSetProtocolFeeReceiverResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRParamsResponse:
+  sojahub.sojahub.ledger.MsgSetRParamsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRelayFeeReceiverResponse:
+  sojahub.sojahub.ledger.MsgSetRelayFeeReceiverResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRelayGasPriceResponse:
+  sojahub.sojahub.ledger.MsgSetRelayGasPriceResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetStakingRewardCommissionResponse:
+  sojahub.sojahub.ledger.MsgSetStakingRewardCommissionResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetUnbondCommissionResponse:
+  sojahub.sojahub.ledger.MsgSetUnbondCommissionResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetUnbondRelayFeeResponse:
+  sojahub.sojahub.ledger.MsgSetUnbondRelayFeeResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetWithdrawalAddrResponse:
+  sojahub.sojahub.ledger.MsgSetWithdrawalAddrResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSubmitSignatureResponse:
+  sojahub.sojahub.ledger.MsgSubmitSignatureResponse:
     type: object
-  stafihub.stafihub.ledger.MsgToggleUnbondSwitchResponse:
+  sojahub.sojahub.ledger.MsgToggleUnbondSwitchResponse:
     type: object
-  stafihub.stafihub.ledger.MsgUnsealMigrateInitResponse:
+  sojahub.sojahub.ledger.MsgUnsealMigrateInitResponse:
     type: object
-  stafihub.stafihub.ledger.OriginalTxType:
+  sojahub.sojahub.ledger.OriginalTxType:
     type: string
     enum:
       - ORIGINAL_TX_TYPE_DEAL_ERAUPDATED
@@ -45818,7 +45818,7 @@ definitions:
       - ORIGINAL_TX_TYPE_RESERVED
     default: ORIGINAL_TX_TYPE_DEAL_ERAUPDATED
     description: OriginalTxType enumerates the tx type of a signature.
-  stafihub.stafihub.ledger.PoolBondState:
+  sojahub.sojahub.ledger.PoolBondState:
     type: string
     enum:
       - ERA_UPDATED
@@ -45827,7 +45827,7 @@ definitions:
       - TRANSFER_SKIPPED
       - TRANSFER_REPORTED
     default: ERA_UPDATED
-  stafihub.stafihub.ledger.PoolDetail:
+  sojahub.sojahub.ledger.PoolDetail:
     type: object
     properties:
       denom:
@@ -45848,21 +45848,21 @@ definitions:
           - NOT_ACTIVE
           - RESERVED
         default: ACTIVE
-  stafihub.stafihub.ledger.PoolStatus:
+  sojahub.sojahub.ledger.PoolStatus:
     type: string
     enum:
       - ACTIVE
       - NOT_ACTIVE
       - RESERVED
     default: ACTIVE
-  stafihub.stafihub.ledger.QueryBondedPoolsByDenomResponse:
+  sojahub.sojahub.ledger.QueryBondedPoolsByDenomResponse:
     type: object
     properties:
       addrs:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryEraExchangeRatesByDenomResponse:
+  sojahub.sojahub.ledger.QueryEraExchangeRatesByDenomResponse:
     type: object
     properties:
       eraExchangeRates:
@@ -45877,7 +45877,7 @@ definitions:
               format: int64
             value:
               type: string
-  stafihub.stafihub.ledger.QueryExchangeRateAllResponse:
+  sojahub.sojahub.ledger.QueryExchangeRateAllResponse:
     type: object
     properties:
       exchangeRates:
@@ -45889,7 +45889,7 @@ definitions:
               type: string
             value:
               type: string
-  stafihub.stafihub.ledger.QueryGetBondPipelineResponse:
+  sojahub.sojahub.ledger.QueryGetBondPipelineResponse:
     type: object
     properties:
       pipeline:
@@ -45908,7 +45908,7 @@ definitions:
                 type: string
               active:
                 type: string
-  stafihub.stafihub.ledger.QueryGetBondRecordResponse:
+  sojahub.sojahub.ledger.QueryGetBondRecordResponse:
     type: object
     properties:
       bondRecord:
@@ -45934,20 +45934,20 @@ definitions:
               - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
               - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
             default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.QueryGetChainEraResponse:
+  sojahub.sojahub.ledger.QueryGetChainEraResponse:
     type: object
     properties:
       era:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryGetCurrentEraSnapshotResponse:
+  sojahub.sojahub.ledger.QueryGetCurrentEraSnapshotResponse:
     type: object
     properties:
       shotIds:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryGetEraExchangeRateResponse:
+  sojahub.sojahub.ledger.QueryGetEraExchangeRateResponse:
     type: object
     properties:
       eraExchangeRate:
@@ -45960,20 +45960,20 @@ definitions:
             format: int64
           value:
             type: string
-  stafihub.stafihub.ledger.QueryGetEraSnapshotResponse:
+  sojahub.sojahub.ledger.QueryGetEraSnapshotResponse:
     type: object
     properties:
       shotIds:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryGetEraUnbondLimitResponse:
+  sojahub.sojahub.ledger.QueryGetEraUnbondLimitResponse:
     type: object
     properties:
       limit:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryGetExchangeRateResponse:
+  sojahub.sojahub.ledger.QueryGetExchangeRateResponse:
     type: object
     properties:
       exchangeRate:
@@ -45983,7 +45983,7 @@ definitions:
             type: string
           value:
             type: string
-  stafihub.stafihub.ledger.QueryGetPoolDetailResponse:
+  sojahub.sojahub.ledger.QueryGetPoolDetailResponse:
     type: object
     properties:
       detail:
@@ -46007,12 +46007,12 @@ definitions:
               - NOT_ACTIVE
               - RESERVED
             default: ACTIVE
-  stafihub.stafihub.ledger.QueryGetProtocolFeeReceiverResponse:
+  sojahub.sojahub.ledger.QueryGetProtocolFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.ledger.QueryGetRParamsResponse:
+  sojahub.sojahub.ledger.QueryGetRParamsResponse:
     type: object
     properties:
       rParams:
@@ -46033,7 +46033,7 @@ definitions:
             format: int64
           leastBond:
             type: string
-  stafihub.stafihub.ledger.QueryGetSignatureResponse:
+  sojahub.sojahub.ledger.QueryGetSignatureResponse:
     type: object
     properties:
       signature:
@@ -46062,7 +46062,7 @@ definitions:
             type: array
             items:
               type: string
-  stafihub.stafihub.ledger.QueryGetSnapshotResponse:
+  sojahub.sojahub.ledger.QueryGetSnapshotResponse:
     type: object
     properties:
       shot:
@@ -46093,22 +46093,22 @@ definitions:
               - TRANSFER_SKIPPED
               - TRANSFER_REPORTED
             default: ERA_UPDATED
-  stafihub.stafihub.ledger.QueryGetStakingRewardCommissionResponse:
+  sojahub.sojahub.ledger.QueryGetStakingRewardCommissionResponse:
     type: object
     properties:
       commission:
         type: string
-  stafihub.stafihub.ledger.QueryGetTotalExpectedActiveResponse:
+  sojahub.sojahub.ledger.QueryGetTotalExpectedActiveResponse:
     type: object
     properties:
       active:
         type: string
-  stafihub.stafihub.ledger.QueryGetUnbondCommissionResponse:
+  sojahub.sojahub.ledger.QueryGetUnbondCommissionResponse:
     type: object
     properties:
       commission:
         type: string
-  stafihub.stafihub.ledger.QueryGetUnbondRelayFeeResponse:
+  sojahub.sojahub.ledger.QueryGetUnbondRelayFeeResponse:
     type: object
     properties:
       fee:
@@ -46131,7 +46131,7 @@ definitions:
               method
 
               signatures required by gogoproto.
-  stafihub.stafihub.ledger.QueryIcaPoolListResponse:
+  sojahub.sojahub.ledger.QueryIcaPoolListResponse:
     type: object
     properties:
       icaPoolList:
@@ -46191,7 +46191,7 @@ definitions:
                   type: string
                 hostChannelId:
                   type: string
-  stafihub.stafihub.ledger.QueryInterchainTxStatusResponse:
+  sojahub.sojahub.ledger.QueryInterchainTxStatusResponse:
     type: object
     properties:
       interchainTxStatus:
@@ -46202,13 +46202,13 @@ definitions:
           - INTERCHAIN_TX_STATUS_SUCCESS
           - INTERCHAIN_TX_STATUS_FAILED
         default: INTERCHAIN_TX_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.QueryPoolUnbondNextSequenceResponse:
+  sojahub.sojahub.ledger.QueryPoolUnbondNextSequenceResponse:
     type: object
     properties:
       nextSequence:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryPoolUnbondingsResponse:
+  sojahub.sojahub.ledger.QueryPoolUnbondingsResponse:
     type: object
     properties:
       unbondings:
@@ -46222,12 +46222,12 @@ definitions:
               type: string
             recipient:
               type: string
-  stafihub.stafihub.ledger.QueryRelayFeeReceiverResponse:
+  sojahub.sojahub.ledger.QueryRelayFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.ledger.QueryTotalProtocolFeeResponse:
+  sojahub.sojahub.ledger.QueryTotalProtocolFeeResponse:
     type: object
     properties:
       totalProtocolFeeList:
@@ -46239,12 +46239,12 @@ definitions:
               type: string
             value:
               type: string
-  stafihub.stafihub.ledger.QueryUnbondSwitchResponse:
+  sojahub.sojahub.ledger.QueryUnbondSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.ledger.RParams:
+  sojahub.sojahub.ledger.RParams:
     type: object
     properties:
       denom:
@@ -46262,7 +46262,7 @@ definitions:
         format: int64
       leastBond:
         type: string
-  stafihub.stafihub.ledger.Signature:
+  sojahub.sojahub.ledger.Signature:
     type: object
     properties:
       denom:
@@ -46288,14 +46288,14 @@ definitions:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.TotalProtocolFee:
+  sojahub.sojahub.ledger.TotalProtocolFee:
     type: object
     properties:
       denom:
         type: string
       value:
         type: string
-  stafihub.stafihub.ledger.UnbondRelayFee:
+  sojahub.sojahub.ledger.UnbondRelayFee:
     type: object
     properties:
       denom:
@@ -46312,7 +46312,7 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.ledger.Unbonding:
+  sojahub.sojahub.ledger.Unbonding:
     type: object
     properties:
       unbonder:
@@ -46321,7 +46321,7 @@ definitions:
         type: string
       recipient:
         type: string
-  stafihub.stafihub.mining.CreateRewardPoolInfo:
+  sojahub.sojahub.mining.CreateRewardPoolInfo:
     type: object
     properties:
       rewardTokenDenom:
@@ -46333,7 +46333,7 @@ definitions:
       startTimestamp:
         type: string
         format: uint64
-  stafihub.stafihub.mining.CreateStakeItemInfo:
+  sojahub.sojahub.mining.CreateStakeItemInfo:
     type: object
     properties:
       lockSecond:
@@ -46342,85 +46342,85 @@ definitions:
       powerRewardRate:
         type: string
         title: user stakedPower = powerRewardRate * stakedAmount
-  stafihub.stafihub.mining.MsgAddMiningProviderResponse:
+  sojahub.sojahub.mining.MsgAddMiningProviderResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardPoolResponse:
+  sojahub.sojahub.mining.MsgAddRewardPoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardResponse:
+  sojahub.sojahub.mining.MsgAddRewardResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardTokenResponse:
+  sojahub.sojahub.mining.MsgAddRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakeItemResponse:
+  sojahub.sojahub.mining.MsgAddStakeItemResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakePoolResponse:
+  sojahub.sojahub.mining.MsgAddStakePoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakeTokenResponse:
+  sojahub.sojahub.mining.MsgAddStakeTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgClaimRewardResponse:
+  sojahub.sojahub.mining.MsgClaimRewardResponse:
     type: object
-  stafihub.stafihub.mining.MsgEmergencyWithdrawResponse:
+  sojahub.sojahub.mining.MsgEmergencyWithdrawResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmMiningProviderResponse:
+  sojahub.sojahub.mining.MsgRmMiningProviderResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmRewardTokenResponse:
+  sojahub.sojahub.mining.MsgRmRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmStakeTokenResponse:
+  sojahub.sojahub.mining.MsgRmStakeTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetMaxRewardPoolNumberResponse:
+  sojahub.sojahub.mining.MsgSetMaxRewardPoolNumberResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetMaxStakeItemNumberResponse:
+  sojahub.sojahub.mining.MsgSetMaxStakeItemNumberResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetStakeItemLimitResponse:
+  sojahub.sojahub.mining.MsgSetStakeItemLimitResponse:
     type: object
-  stafihub.stafihub.mining.MsgStakeResponse:
+  sojahub.sojahub.mining.MsgStakeResponse:
     type: object
-  stafihub.stafihub.mining.MsgToggleEmergencySwitchResponse:
+  sojahub.sojahub.mining.MsgToggleEmergencySwitchResponse:
     type: object
-  stafihub.stafihub.mining.MsgToggleProviderSwitchResponse:
+  sojahub.sojahub.mining.MsgToggleProviderSwitchResponse:
     type: object
-  stafihub.stafihub.mining.MsgUpdateRewardPoolResponse:
+  sojahub.sojahub.mining.MsgUpdateRewardPoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgUpdateStakeItemResponse:
+  sojahub.sojahub.mining.MsgUpdateStakeItemResponse:
     type: object
-  stafihub.stafihub.mining.MsgWithdrawResponse:
+  sojahub.sojahub.mining.MsgWithdrawResponse:
     type: object
-  stafihub.stafihub.mining.MsgWithdrawRewardTokenResponse:
+  sojahub.sojahub.mining.MsgWithdrawRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.Params:
+  sojahub.sojahub.mining.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.mining.QueryMaxRewardPoolNumberResponse:
+  sojahub.sojahub.mining.QueryMaxRewardPoolNumberResponse:
     type: object
     properties:
       number:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryMaxStakeItemNumberResponse:
+  sojahub.sojahub.mining.QueryMaxStakeItemNumberResponse:
     type: object
     properties:
       number:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryMiningProviderListResponse:
+  sojahub.sojahub.mining.QueryMiningProviderListResponse:
     type: object
     properties:
       miningProviderList:
         type: array
         items:
           type: string
-  stafihub.stafihub.mining.QueryParamsResponse:
+  sojahub.sojahub.mining.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.mining.QueryProviderSwitchResponse:
+  sojahub.sojahub.mining.QueryProviderSwitchResponse:
     type: object
     properties:
       providerSwitch:
         type: boolean
-  stafihub.stafihub.mining.QueryRewardTokenListResponse:
+  sojahub.sojahub.mining.QueryRewardTokenListResponse:
     type: object
     properties:
       rewardTokenList:
@@ -46434,7 +46434,7 @@ definitions:
               type: string
             minRewardPerSecond:
               type: string
-  stafihub.stafihub.mining.QueryStakeItemListResponse:
+  sojahub.sojahub.mining.QueryStakeItemListResponse:
     type: object
     properties:
       stakeItemList:
@@ -46456,7 +46456,7 @@ definitions:
               title: user stakedPower = powerRewardRate * stakedAmount
             enable:
               type: boolean
-  stafihub.stafihub.mining.QueryStakePoolInfoResponse:
+  sojahub.sojahub.mining.QueryStakePoolInfoResponse:
     type: object
     properties:
       stakePool:
@@ -46505,7 +46505,7 @@ definitions:
             type: boolean
           creator:
             type: string
-  stafihub.stafihub.mining.QueryStakePoolListResponse:
+  sojahub.sojahub.mining.QueryStakePoolListResponse:
     type: object
     properties:
       stakePoolList:
@@ -46556,13 +46556,13 @@ definitions:
               type: boolean
             creator:
               type: string
-  stafihub.stafihub.mining.QueryStakeRecordCountResponse:
+  sojahub.sojahub.mining.QueryStakeRecordCountResponse:
     type: object
     properties:
       count:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryStakeRecordListResponse:
+  sojahub.sojahub.mining.QueryStakeRecordListResponse:
     type: object
     properties:
       stakeRecordList:
@@ -46607,7 +46607,7 @@ definitions:
             stakeItemIndex:
               type: integer
               format: int64
-  stafihub.stafihub.mining.QueryStakeRecordResponse:
+  sojahub.sojahub.mining.QueryStakeRecordResponse:
     type: object
     properties:
       stakeRecord:
@@ -46650,7 +46650,7 @@ definitions:
           stakeItemIndex:
             type: integer
             format: int64
-  stafihub.stafihub.mining.QueryStakeRewardResponse:
+  sojahub.sojahub.mining.QueryStakeRewardResponse:
     type: object
     properties:
       rewardTokens:
@@ -46667,7 +46667,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  stafihub.stafihub.mining.RewardPool:
+  sojahub.sojahub.mining.RewardPool:
     type: object
     properties:
       index:
@@ -46693,7 +46693,7 @@ definitions:
         type: string
       totalClaimedAmount:
         type: string
-  stafihub.stafihub.mining.RewardToken:
+  sojahub.sojahub.mining.RewardToken:
     type: object
     properties:
       rewardTokenDenom:
@@ -46702,7 +46702,7 @@ definitions:
         type: string
       minRewardPerSecond:
         type: string
-  stafihub.stafihub.mining.StakeItem:
+  sojahub.sojahub.mining.StakeItem:
     type: object
     properties:
       index:
@@ -46719,7 +46719,7 @@ definitions:
         title: user stakedPower = powerRewardRate * stakedAmount
       enable:
         type: boolean
-  stafihub.stafihub.mining.StakePool:
+  sojahub.sojahub.mining.StakePool:
     type: object
     properties:
       index:
@@ -46765,7 +46765,7 @@ definitions:
         type: boolean
       creator:
         type: string
-  stafihub.stafihub.mining.UserRewardInfo:
+  sojahub.sojahub.mining.UserRewardInfo:
     type: object
     properties:
       rewardPoolIndex:
@@ -46777,7 +46777,7 @@ definitions:
         type: string
       claimedAmount:
         type: string
-  stafihub.stafihub.mining.UserStakeRecord:
+  sojahub.sojahub.mining.UserStakeRecord:
     type: object
     properties:
       userAddress:
@@ -46911,73 +46911,73 @@ definitions:
     description: |-
       Metadata represents a struct that describes
       a basic token.
-  stafihub.stafihub.rbank.MsgAddDenomResponse:
+  sojahub.sojahub.rbank.MsgAddDenomResponse:
     type: object
-  stafihub.stafihub.rbank.Params:
+  sojahub.sojahub.rbank.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rbank.QueryAddressPrefixResponse:
+  sojahub.sojahub.rbank.QueryAddressPrefixResponse:
     type: object
     properties:
       accAddressPrefix:
         type: string
       valAddressPrefix:
         type: string
-  stafihub.stafihub.rbank.QueryParamsResponse:
+  sojahub.sojahub.rbank.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rdex.MsgAddLiquidityResponse:
+  sojahub.sojahub.rdex.MsgAddLiquidityResponse:
     type: object
-  stafihub.stafihub.rdex.MsgAddPoolCreatorResponse:
+  sojahub.sojahub.rdex.MsgAddPoolCreatorResponse:
     type: object
-  stafihub.stafihub.rdex.MsgAddProviderResponse:
+  sojahub.sojahub.rdex.MsgAddProviderResponse:
     type: object
-  stafihub.stafihub.rdex.MsgCreatePoolResponse:
+  sojahub.sojahub.rdex.MsgCreatePoolResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRemoveLiquidityResponse:
+  sojahub.sojahub.rdex.MsgRemoveLiquidityResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRmPoolCreatorResponse:
+  sojahub.sojahub.rdex.MsgRmPoolCreatorResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRmProviderResponse:
+  sojahub.sojahub.rdex.MsgRmProviderResponse:
     type: object
-  stafihub.stafihub.rdex.MsgSwapResponse:
+  sojahub.sojahub.rdex.MsgSwapResponse:
     type: object
-  stafihub.stafihub.rdex.MsgToggleProviderSwitchResponse:
+  sojahub.sojahub.rdex.MsgToggleProviderSwitchResponse:
     type: object
-  stafihub.stafihub.rdex.Params:
+  sojahub.sojahub.rdex.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rdex.QueryParamsResponse:
+  sojahub.sojahub.rdex.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rdex.QueryPoolCreatorListResponse:
+  sojahub.sojahub.rdex.QueryPoolCreatorListResponse:
     type: object
     properties:
       poolCreatorList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rdex.QueryProviderListResponse:
+  sojahub.sojahub.rdex.QueryProviderListResponse:
     type: object
     properties:
       providerList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rdex.QueryProviderSwitchResponse:
+  sojahub.sojahub.rdex.QueryProviderSwitchResponse:
     type: object
     properties:
       providerSwitch:
         type: boolean
-  stafihub.stafihub.rdex.QuerySwapPoolInfoResponse:
+  sojahub.sojahub.rdex.QuerySwapPoolInfoResponse:
     type: object
     properties:
       swapPool:
@@ -47031,7 +47031,7 @@ definitions:
               method
 
               signatures required by gogoproto.
-  stafihub.stafihub.rdex.QuerySwapPoolListResponse:
+  sojahub.sojahub.rdex.QuerySwapPoolListResponse:
     type: object
     properties:
       swapPoolList:
@@ -47087,7 +47087,7 @@ definitions:
                 method
 
                 signatures required by gogoproto.
-  stafihub.stafihub.rdex.SwapPool:
+  sojahub.sojahub.rdex.SwapPool:
     type: object
     properties:
       index:
@@ -47129,26 +47129,26 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.relayers.MsgAddRelayerResponse:
+  sojahub.sojahub.relayers.MsgAddRelayerResponse:
     type: object
-  stafihub.stafihub.relayers.MsgDeleteRelayerResponse:
+  sojahub.sojahub.relayers.MsgDeleteRelayerResponse:
     type: object
-  stafihub.stafihub.relayers.MsgSetThresholdResponse:
+  sojahub.sojahub.relayers.MsgSetThresholdResponse:
     type: object
-  stafihub.stafihub.relayers.QueryRelayersResponse:
+  sojahub.sojahub.relayers.QueryRelayersResponse:
     type: object
     properties:
       relayers:
         type: array
         items:
           type: string
-  stafihub.stafihub.relayers.QueryThresholdResponse:
+  sojahub.sojahub.relayers.QueryThresholdResponse:
     type: object
     properties:
       threshold:
         type: integer
         format: int64
-  stafihub.stafihub.rmintreward.Acts:
+  sojahub.sojahub.rmintreward.Acts:
     type: object
     properties:
       acts:
@@ -47156,7 +47156,7 @@ definitions:
         items:
           type: string
           format: uint64
-  stafihub.stafihub.rmintreward.MintRewardAct:
+  sojahub.sojahub.rmintreward.MintRewardAct:
     type: object
     properties:
       begin:
@@ -47187,7 +47187,7 @@ definitions:
               type: string
             userLimit:
               type: string
-  stafihub.stafihub.rmintreward.MintRewardActPost:
+  sojahub.sojahub.rmintreward.MintRewardActPost:
     type: object
     properties:
       begin:
@@ -47212,24 +47212,24 @@ definitions:
               type: string
             userLimit:
               type: string
-  stafihub.stafihub.rmintreward.MsgAddMintRewardActResponse:
+  sojahub.sojahub.rmintreward.MsgAddMintRewardActResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgClaimMintRewardResponse:
+  sojahub.sojahub.rmintreward.MsgClaimMintRewardResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgProvideRewardTokenResponse:
+  sojahub.sojahub.rmintreward.MsgProvideRewardTokenResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgUpdateMintRewardActResponse:
+  sojahub.sojahub.rmintreward.MsgUpdateMintRewardActResponse:
     type: object
-  stafihub.stafihub.rmintreward.Params:
+  sojahub.sojahub.rmintreward.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rmintreward.QueryActCurrentCycleResponse:
+  sojahub.sojahub.rmintreward.QueryActCurrentCycleResponse:
     type: object
     properties:
       currentCycle:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.QueryActDetailResponse:
+  sojahub.sojahub.rmintreward.QueryActDetailResponse:
     type: object
     properties:
       act:
@@ -47263,13 +47263,13 @@ definitions:
                   type: string
                 userLimit:
                   type: string
-  stafihub.stafihub.rmintreward.QueryActLatestCycleResponse:
+  sojahub.sojahub.rmintreward.QueryActLatestCycleResponse:
     type: object
     properties:
       latestCycle:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.QueryClaimInfoDetailResponse:
+  sojahub.sojahub.rmintreward.QueryClaimInfoDetailResponse:
     type: object
     properties:
       claimInfo:
@@ -47296,14 +47296,14 @@ definitions:
                   type: string
                 totalClaimedAmount:
                   type: string
-  stafihub.stafihub.rmintreward.QueryParamsResponse:
+  sojahub.sojahub.rmintreward.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rmintreward.QueryUserActsResponse:
+  sojahub.sojahub.rmintreward.QueryUserActsResponse:
     type: object
     properties:
       acts:
@@ -47314,13 +47314,13 @@ definitions:
             items:
               type: string
               format: uint64
-  stafihub.stafihub.rmintreward.QueryUserMintCountResponse:
+  sojahub.sojahub.rmintreward.QueryUserMintCountResponse:
     type: object
     properties:
       count:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.TokenClaimInfo:
+  sojahub.sojahub.rmintreward.TokenClaimInfo:
     type: object
     properties:
       denom:
@@ -47329,7 +47329,7 @@ definitions:
         type: string
       totalClaimedAmount:
         type: string
-  stafihub.stafihub.rmintreward.TokenRewardInfo:
+  sojahub.sojahub.rmintreward.TokenRewardInfo:
     type: object
     properties:
       denom:
@@ -47342,7 +47342,7 @@ definitions:
         type: string
       userLimit:
         type: string
-  stafihub.stafihub.rmintreward.TokenRewardInfoPost:
+  sojahub.sojahub.rmintreward.TokenRewardInfoPost:
     type: object
     properties:
       denom:
@@ -47353,7 +47353,7 @@ definitions:
         type: string
       userLimit:
         type: string
-  stafihub.stafihub.rmintreward.UserClaimInfo:
+  sojahub.sojahub.rmintreward.UserClaimInfo:
     type: object
     properties:
       mintRTokenAmount:
@@ -47377,62 +47377,62 @@ definitions:
               type: string
             totalClaimedAmount:
               type: string
-  stafihub.stafihub.rstaking.MsgAddDelegatorToWhitelistResponse:
+  sojahub.sojahub.rstaking.MsgAddDelegatorToWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgAddValToWhitelistResponse:
+  sojahub.sojahub.rstaking.MsgAddValToWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgProvideTokenResponse:
+  sojahub.sojahub.rstaking.MsgProvideTokenResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgRmDelegatorFromWhitelistResponse:
+  sojahub.sojahub.rstaking.MsgRmDelegatorFromWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgSetInflationBaseResponse:
+  sojahub.sojahub.rstaking.MsgSetInflationBaseResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgToggleDelegatorWhitelistSwitchResponse:
+  sojahub.sojahub.rstaking.MsgToggleDelegatorWhitelistSwitchResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgToggleValidatorWhitelistSwitchResponse:
+  sojahub.sojahub.rstaking.MsgToggleValidatorWhitelistSwitchResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgWithdrawResponse:
+  sojahub.sojahub.rstaking.MsgWithdrawResponse:
     type: object
-  stafihub.stafihub.rstaking.Params:
+  sojahub.sojahub.rstaking.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rstaking.QueryDelegatorWhitelistResponse:
+  sojahub.sojahub.rstaking.QueryDelegatorWhitelistResponse:
     type: object
     properties:
       delegatorAddress:
         type: array
         items:
           type: string
-  stafihub.stafihub.rstaking.QueryDelegatorWhitelistSwitchResponse:
+  sojahub.sojahub.rstaking.QueryDelegatorWhitelistSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.rstaking.QueryInflationBaseResponse:
+  sojahub.sojahub.rstaking.QueryInflationBaseResponse:
     type: object
     properties:
       inflationBase:
         type: string
-  stafihub.stafihub.rstaking.QueryParamsResponse:
+  sojahub.sojahub.rstaking.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rstaking.QueryValidatorWhitelistResponse:
+  sojahub.sojahub.rstaking.QueryValidatorWhitelistResponse:
     type: object
     properties:
       valAddress:
         type: array
         items:
           type: string
-  stafihub.stafihub.rstaking.QueryValidatorWhitelistSwitchResponse:
+  sojahub.sojahub.rstaking.QueryValidatorWhitelistSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.rvalidator.Cycle:
+  sojahub.sojahub.rvalidator.Cycle:
     type: object
     properties:
       denom:
@@ -47445,7 +47445,7 @@ definitions:
       number:
         type: string
         format: uint64
-  stafihub.stafihub.rvalidator.CycleSeconds:
+  sojahub.sojahub.rvalidator.CycleSeconds:
     type: object
     properties:
       denom:
@@ -47456,20 +47456,20 @@ definitions:
       seconds:
         type: string
         format: uint64
-  stafihub.stafihub.rvalidator.MsgAddRValidatorResponse:
+  sojahub.sojahub.rvalidator.MsgAddRValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgInitRValidatorResponse:
+  sojahub.sojahub.rvalidator.MsgInitRValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgRmRValidatorResponse:
+  sojahub.sojahub.rvalidator.MsgRmRValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgSetCycleSecondsResponse:
+  sojahub.sojahub.rvalidator.MsgSetCycleSecondsResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgSetShuffleSecondsResponse:
+  sojahub.sojahub.rvalidator.MsgSetShuffleSecondsResponse:
     type: object
-  stafihub.stafihub.rvalidator.Params:
+  sojahub.sojahub.rvalidator.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rvalidator.QueryCycleSecondsResponse:
+  sojahub.sojahub.rvalidator.QueryCycleSecondsResponse:
     type: object
     properties:
       cycleSeconds:
@@ -47483,7 +47483,7 @@ definitions:
           seconds:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryLatestDealedCycleResponse:
+  sojahub.sojahub.rvalidator.QueryLatestDealedCycleResponse:
     type: object
     properties:
       latestDealedCycle:
@@ -47499,7 +47499,7 @@ definitions:
           number:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryLatestVotedCycleResponse:
+  sojahub.sojahub.rvalidator.QueryLatestVotedCycleResponse:
     type: object
     properties:
       latestVotedCycle:
@@ -47515,21 +47515,21 @@ definitions:
           number:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryParamsResponse:
+  sojahub.sojahub.rvalidator.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rvalidator.QueryRValidatorListResponse:
+  sojahub.sojahub.rvalidator.QueryRValidatorListResponse:
     type: object
     properties:
       rValidatorList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rvalidator.QueryShuffleSecondsResponse:
+  sojahub.sojahub.rvalidator.QueryShuffleSecondsResponse:
     type: object
     properties:
       shuffleSeconds:
@@ -47543,7 +47543,7 @@ definitions:
           seconds:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.ShuffleSeconds:
+  sojahub.sojahub.rvalidator.ShuffleSeconds:
     type: object
     properties:
       denom:
@@ -47554,9 +47554,9 @@ definitions:
       seconds:
         type: string
         format: uint64
-  stafihub.stafihub.rvote.MsgSetProposalLifeResponse:
+  sojahub.sojahub.rvote.MsgSetProposalLifeResponse:
     type: object
-  stafihub.stafihub.rvote.MsgSubmitProposalResponse:
+  sojahub.sojahub.rvote.MsgSubmitProposalResponse:
     type: object
     properties:
       propId:
@@ -47569,7 +47569,7 @@ definitions:
           - PROPOSAL_STATUS_EXPIRED
         default: PROPOSAL_STATUS_INITIATED
         description: ProposalStatus enumerates the valid statuses of a proposal.
-  stafihub.stafihub.rvote.ProposalStatus:
+  sojahub.sojahub.rvote.ProposalStatus:
     type: string
     enum:
       - PROPOSAL_STATUS_INITIATED
@@ -47577,20 +47577,20 @@ definitions:
       - PROPOSAL_STATUS_EXPIRED
     default: PROPOSAL_STATUS_INITIATED
     description: ProposalStatus enumerates the valid statuses of a proposal.
-  stafihub.stafihub.rvote.QueryGetProposalLifeResponse:
+  sojahub.sojahub.rvote.QueryGetProposalLifeResponse:
     type: object
     properties:
       proposalLife:
         type: string
         format: int64
-  stafihub.stafihub.rvote.QueryGetProposalResponse:
+  sojahub.sojahub.rvote.QueryGetProposalResponse:
     type: object
     properties:
       proposal:
         type: string
-  stafihub.stafihub.sudo.MsgUpdateAdminResponse:
+  sojahub.sojahub.sudo.MsgUpdateAdminResponse:
     type: object
-  stafihub.stafihub.sudo.QueryAdminResponse:
+  sojahub.sojahub.sudo.QueryAdminResponse:
     type: object
     properties:
       address:

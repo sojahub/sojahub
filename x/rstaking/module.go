@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/stafihub/stafihub/x/rstaking/client/cli"
-	"github.com/stafihub/stafihub/x/rstaking/keeper"
-	"github.com/stafihub/stafihub/x/rstaking/types"
+	"github.com/sojahub/sojahub/x/rstaking/client/cli"
+	"github.com/sojahub/sojahub/x/rstaking/keeper"
+	"github.com/sojahub/sojahub/x/rstaking/types"
 )
 
 var (

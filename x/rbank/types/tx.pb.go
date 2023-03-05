@@ -134,8 +134,8 @@ func (m *MsgAddDenomResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgAddDenomResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgAddDenom)(nil), "stafihub.stafihub.rbank.MsgAddDenom")
-	proto.RegisterType((*MsgAddDenomResponse)(nil), "stafihub.stafihub.rbank.MsgAddDenomResponse")
+	proto.RegisterType((*MsgAddDenom)(nil), "sojahub.sojahub.rbank.MsgAddDenom")
+	proto.RegisterType((*MsgAddDenomResponse)(nil), "sojahub.sojahub.rbank.MsgAddDenomResponse")
 }
 
 func init() { proto.RegisterFile("rbank/tx.proto", fileDescriptor_c7b27080a32af813) }
@@ -188,7 +188,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) AddDenom(ctx context.Context, in *MsgAddDenom, opts ...grpc.CallOption) (*MsgAddDenomResponse, error) {
 	out := new(MsgAddDenomResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.rbank.Msg/AddDenom", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/sojahub.sojahub.rbank.Msg/AddDenom", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -222,7 +222,7 @@ func _Msg_AddDenom_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.rbank.Msg/AddDenom",
+		FullMethod: "/sojahub.sojahub.rbank.Msg/AddDenom",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddDenom(ctx, req.(*MsgAddDenom))
@@ -231,7 +231,7 @@ func _Msg_AddDenom_Handler(srv interface{}, ctx context.Context, dec func(interf
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.rbank.Msg",
+	ServiceName: "sojahub.sojahub.rbank.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

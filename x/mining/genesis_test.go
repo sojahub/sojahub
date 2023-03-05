@@ -3,10 +3,10 @@ package mining_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/mining"
-	"github.com/stafihub/stafihub/x/mining/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/nullify"
+	"github.com/sojahub/sojahub/x/mining"
+	"github.com/sojahub/sojahub/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

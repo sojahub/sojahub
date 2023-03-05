@@ -3,10 +3,10 @@ package rbank_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/rbank"
-	"github.com/stafihub/stafihub/x/rbank/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/nullify"
+	"github.com/sojahub/sojahub/x/rbank"
+	"github.com/sojahub/sojahub/x/rbank/types"
 	"github.com/stretchr/testify/require"
 )
 

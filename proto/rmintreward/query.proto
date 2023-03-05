@@ -1,5 +1,5 @@
 syntax = "proto3";
-package stafihub.stafihub.rmintreward;
+package sojahub.sojahub.rmintreward;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -8,42 +8,42 @@ import "rmintreward/params.proto";
 import "rmintreward/models.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/stafihub/stafihub/x/rmintreward/types";
+option go_package = "github.com/sojahub/sojahub/x/rmintreward/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/stafihub/stafihub/rmintreward/params";
+    option (google.api.http).get = "/sojahub/sojahub/rmintreward/params";
   }
   // Queries a list of ActLatestCycle items.
 	rpc ActLatestCycle(QueryActLatestCycleRequest) returns (QueryActLatestCycleResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/act_latest_cycle/{denom}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/act_latest_cycle/{denom}";
 	}
 
 // Queries a list of ActDetail items.
 	rpc ActDetail(QueryActDetailRequest) returns (QueryActDetailResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/act_detail/{denom}/{cycle}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/act_detail/{denom}/{cycle}";
 	}
 
 // Queries a list of UserMintCount items.
 	rpc UserMintCount(QueryUserMintCountRequest) returns (QueryUserMintCountResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/user_mint_count/{address}/{denom}/{cycle}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/user_mint_count/{address}/{denom}/{cycle}";
 	}
 
 // Queries a list of UserActs items.
 	rpc UserActs(QueryUserActsRequest) returns (QueryUserActsResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/user_acts/{address}/{denom}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/user_acts/{address}/{denom}";
 	}
 
 // Queries a list of ActCurrentCycle items.
 	rpc ActCurrentCycle(QueryActCurrentCycleRequest) returns (QueryActCurrentCycleResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/act_current_cycle/{denom}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/act_current_cycle/{denom}";
 	}
 
 // Queries a list of ClaimInfoDetail items.
 	rpc ClaimInfoDetail(QueryClaimInfoDetailRequest) returns (QueryClaimInfoDetailResponse) {
-		option (google.api.http).get = "/stafihub/stafihub/rmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}";
+		option (google.api.http).get = "/sojahub/sojahub/rmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}";
 	}
 
 // this line is used by starport scaffolding # 2

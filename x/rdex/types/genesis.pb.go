@@ -101,7 +101,7 @@ func (m *GenesisState) GetPoolCreatorList() []string {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.rdex.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "sojahub.sojahub.rdex.GenesisState")
 }
 
 func init() { proto.RegisterFile("rdex/genesis.proto", fileDescriptor_c37cf5f25c73edc4) }

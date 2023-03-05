@@ -143,8 +143,8 @@ func (m *Threshold) GetValue() uint32 {
 }
 
 func init() {
-	proto.RegisterType((*Relayer)(nil), "stafihub.stafihub.relayers.Relayer")
-	proto.RegisterType((*Threshold)(nil), "stafihub.stafihub.relayers.Threshold")
+	proto.RegisterType((*Relayer)(nil), "sojahub.sojahub.relayers.Relayer")
+	proto.RegisterType((*Threshold)(nil), "sojahub.sojahub.relayers.Threshold")
 }
 
 func init() { proto.RegisterFile("relayers/relayer.proto", fileDescriptor_40adf04c18425525) }

@@ -1,23 +1,23 @@
-# Deploy Your Own StaFiHub Testnet
+# Deploy Your Own SoJaHub Testnet
 
-This document describes 3 ways to setup a network of `stafihubd` nodes, each serving a different usecase:
+This document describes 3 ways to setup a network of `sojahubd` nodes, each serving a different usecase:
 
 1. Single-node, local, manual testnet
 2. Multi-node, local, automated testnet
 3. Multi-node, remote, automated testnet
 
-Supporting code can be found in the [networks directory](https://github.com/stafihub/network) and additionally the `local` or `remote` sub-directories.
+Supporting code can be found in the [networks directory](https://github.com/sojahub/network) and additionally the `local` or `remote` sub-directories.
 
 > NOTE: The `remote` network bootstrapping may be out of sync with the latest releases and is not to be relied upon.
 
 ## Available Docker images
 
-In case you need to use or deploy stafihub as a container you could skip the `build` steps and use the official images, \$TAG stands for the version you are interested in:
+In case you need to use or deploy sojahub as a container you could skip the `build` steps and use the official images, \$TAG stands for the version you are interested in:
 
-- `docker run -it -v ~/.stafihub:/root/.stafihub tendermint:$TAG stafihubd init`
-- `docker run -it -p 26657:26657 -p 26656:26656 -v ~/.stafihub:/root/.stafihub tendermint:$TAG stafihubd start`
+- `docker run -it -v ~/.sojahub:/root/.sojahub tendermint:$TAG sojahubd init`
+- `docker run -it -p 26657:26657 -p 26656:26656 -v ~/.sojahub:/root/.sojahub tendermint:$TAG sojahubd start`
 - ...
-- `docker run -it -v ~/.stafihub:/root/.stafihub tendermint:$TAG stafihubd version`
+- `docker run -it -v ~/.sojahub:/root/.sojahub tendermint:$TAG sojahubd version`
 
 The same images can be used to build your own docker-compose stack.
 
@@ -27,7 +27,7 @@ This guide helps you create a single validator node that runs a network locally 
 
 ### Requirements
 
-- [Install stafihub](./install.md)
+- [Install sojahub](./install.md)
 - [Install `jq`](https://stedolan.github.io/jq/download/) (optional)
 
 ### Create Genesis File and Start the Network
@@ -37,54 +37,54 @@ This guide helps you create a single validator node that runs a network locally 
 cd $HOME
 
 # Initialize the genesis.json file that will help you to bootstrap the network
-stafihubd init my-node --chain-id my-chain
+sojahubd init my-node --chain-id my-chain
 
 # Create a key to hold your validator account
-stafihubd keys add my-account
+sojahubd keys add my-account
 
 # Add that key into the genesis.app_state.accounts array in the genesis file
 # NOTE: this command lets you set the number of coins. Make sure this account has some coins
 # with the genesis.app_state.staking.params.bond_denom denom, the default is staking
-stafihubd add-genesis-account $(stafihubd keys show my-account -a) 1000000000ufis,1000000000validatortoken
+sojahubd add-genesis-account $(sojahubd keys show my-account -a) 1000000000ufury,1000000000validatortoken
 
 # Generate the transaction that creates your validator
-stafihubd gentx my-account 1000000000ufis --chain-id my-chain
+sojahubd gentx my-account 1000000000ufury --chain-id my-chain
 
 # Add the generated bonding transaction to the genesis file
-stafihubd collect-gentxs
+sojahubd collect-gentxs
 
-# Now its safe to start `stafihubd`
-stafihubd start
+# Now its safe to start `sojahubd`
+sojahubd start
 ```
 
-This setup puts all the data for `stafihubd` in `~/.stafihub`. You can examine the genesis file you created at `~/.stafihub/config/genesis.json`. With this configuration `stafihubd` is also ready to use and has an account with tokens (both staking and custom).
+This setup puts all the data for `sojahubd` in `~/.sojahub`. You can examine the genesis file you created at `~/.sojahub/config/genesis.json`. With this configuration `sojahubd` is also ready to use and has an account with tokens (both staking and custom).
 
 ## Multi-node, Local, Automated Testnet
 
-From the [networks/local directory](https://github.com/stafihub/network):
+From the [networks/local directory](https://github.com/sojahub/network):
 
 ### Requirements
 
-- [Install stafihub](./install.md)
+- [Install sojahub](./install.md)
 - [Install docker](https://docs.docker.com/engine/installation/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
 
 ### Build
 
-Build the `stafihubd` binary (linux) and the `tendermint/stafihubdnode` docker image required for running the `localnet` commands. This binary will be mounted into the container and can be updated without rebuilding the image, so you only need to build the image once.
+Build the `sojahubd` binary (linux) and the `tendermint/sojahubdnode` docker image required for running the `localnet` commands. This binary will be mounted into the container and can be updated without rebuilding the image, so you only need to build the image once.
 
 ```bash
-# Clone the stafihub repo
-git clone https://github.com/stafihub/stafihub.git
+# Clone the sojahub repo
+git clone https://github.com/sojahub/sojahub.git
 
 # Work from the SDK repo
-cd stafihub
+cd sojahub
 
 # Build the linux binary in ./build
 make build-linux
 
-# Build tendermint/stafihubdnode image
-make build-docker-stafihubdnode
+# Build tendermint/sojahubdnode image
+make build-docker-sojahubdnode
 ```
 
 ### Run Your Testnet
@@ -95,15 +95,15 @@ To start a 4 node testnet run:
 make localnet-start
 ```
 
-This command creates a 4-node network using the stafihubdnode image.
+This command creates a 4-node network using the sojahubdnode image.
 The ports for each node are found in this table:
 
 | Node ID     | P2P Port | RPC Port |
 | ----------- | -------- | -------- |
-| `stafihubnode0` | `26656`  | `26657`  |
-| `stafihubnode1` | `26659`  | `26660`  |
-| `stafihubnode2` | `26661`  | `26662`  |
-| `stafihubnode3` | `26663`  | `26664`  |
+| `sojahubnode0` | `26656`  | `26657`  |
+| `sojahubnode1` | `26659`  | `26660`  |
+| `sojahubnode2` | `26661`  | `26662`  |
+| `sojahubnode3` | `26663`  | `26664`  |
 
 To update the binary, just rebuild it and restart the nodes:
 
@@ -114,67 +114,67 @@ make build-linux localnet-start
 ### Configuration
 
 The `make localnet-start` creates files for a 4-node testnet in `./build` by
-calling the `stafihubd testnet` command. This outputs a handful of files in the
+calling the `sojahubd testnet` command. This outputs a handful of files in the
 `./build` directory:
 
 ```bash
 $ tree -L 2 build/
 build/
-├── stafihubd
+├── sojahubd
 ├── gentxs
 │   ├── node0.json
 │   ├── node1.json
 │   ├── node2.json
 │   └── node3.json
 ├── node0
-│   └── stafihubd
+│   └── sojahubd
 │       ├── key_seed.json
 │       ├── keys
-│       ├── ${LOG:-stafihubd.log}
+│       ├── ${LOG:-sojahubd.log}
 │       ├── config
 │       └── data
 ├── node1
 │       ├── key_seed.json
-│       ├── ${LOG:-stafihubd.log}
+│       ├── ${LOG:-sojahubd.log}
 │       ├── config
 │       └── data
 ├── node2
 │       ├── key_seed.json
-│       ├── ${LOG:-stafihubd.log}
+│       ├── ${LOG:-sojahubd.log}
 │       ├── config
 │       └── data
 └── node3
          ├── key_seed.json
-         ├── ${LOG:-stafihubd.log}
+         ├── ${LOG:-sojahubd.log}
          ├── config
          └── data
 ```
 
-Each `./build/nodeN` directory is mounted to the `/stafihubd` directory in each container.
+Each `./build/nodeN` directory is mounted to the `/sojahubd` directory in each container.
 
 ### Logging
 
-Logs are saved under each `./build/nodeN/stafihubd/stafihub.log`. You can also watch logs
+Logs are saved under each `./build/nodeN/sojahubd/sojahub.log`. You can also watch logs
 directly via Docker, for example:
 
 ```bash
-docker logs -f stafihubdnode0
+docker logs -f sojahubdnode0
 ```
 
 ### Keys & Accounts
 
-To interact with `stafihubd` and start querying state or creating txs, you use the
-`stafihubd` directory of any given node as your `home`, for example:
+To interact with `sojahubd` and start querying state or creating txs, you use the
+`sojahubd` directory of any given node as your `home`, for example:
 
 ```bash
-stafihubd keys list --home ./build/node0/stafihubd
+sojahubd keys list --home ./build/node0/sojahubd
 ```
 
 Now that accounts exists, you may create new accounts and send those accounts
 funds!
 
 ::: tip
-**Note**: Each node's seed is located at `./build/nodeN/stafihubd/key_seed.json` and can be restored to the CLI using the `stafihubd keys add --restore` command
+**Note**: Each node's seed is located at `./build/nodeN/sojahubd/key_seed.json` and can be restored to the CLI using the `sojahubd keys add --restore` command
 :::
 
 ### Special Binaries
@@ -183,12 +183,12 @@ If you have multiple binaries with different names, you can specify which one to
 
 ```bash
 # Run with custom binary
-BINARY=stafihubfoo make localnet-start
+BINARY=sojahubfoo make localnet-start
 ```
 
 ## Multi-Node, Remote, Automated Testnet
 
-The following should be run from the [networks directory](https://github.com/stafihub/network).
+The following should be run from the [networks directory](https://github.com/sojahub/network).
 
 ### Terraform & Ansible
 

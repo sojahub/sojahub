@@ -2,8 +2,8 @@ package rvalidator
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/rvalidator/keeper"
-	"github.com/stafihub/stafihub/x/rvalidator/types"
+	"github.com/sojahub/sojahub/x/rvalidator/keeper"
+	"github.com/sojahub/sojahub/x/rvalidator/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	//sdk "github.com/cosmos/cosmos-sdk/types"
-	testkeeper "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/relayers/types"
+	testkeeper "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/sample"
+	"github.com/sojahub/sojahub/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 

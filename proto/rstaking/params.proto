@@ -1,9 +1,9 @@
 syntax = "proto3";
-package stafihub.stafihub.rstaking;
+package sojahub.sojahub.rstaking;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/stafihub/stafihub/x/rstaking/types";
+option go_package = "github.com/sojahub/sojahub/x/rstaking/types";
 
 // Params defines the parameters for the module.
 message Params {

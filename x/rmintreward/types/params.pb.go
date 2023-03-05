@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "stafihub.stafihub.rmintreward.Params")
+	proto.RegisterType((*Params)(nil), "sojahub.sojahub.rmintreward.Params")
 }
 
 func init() { proto.RegisterFile("rmintreward/params.proto", fileDescriptor_f12ee7aa4f3f5b5c) }

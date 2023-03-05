@@ -3,10 +3,10 @@ package claim_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/claim"
-	"github.com/stafihub/stafihub/x/claim/types"
+	keepertest "github.com/sojahub/sojahub/testutil/keeper"
+	"github.com/sojahub/sojahub/testutil/nullify"
+	"github.com/sojahub/sojahub/x/claim"
+	"github.com/sojahub/sojahub/x/claim/types"
 	"github.com/stretchr/testify/require"
 )
 

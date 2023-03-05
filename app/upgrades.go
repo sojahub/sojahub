@@ -5,7 +5,7 @@ import (
 
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
-	"github.com/stafihub/stafihub/app/upgrades/v030"
+	"github.com/sojahub/sojahub/app/upgrades/v030"
 )
 
 func (app *App) setupUpgradeHandlers() {

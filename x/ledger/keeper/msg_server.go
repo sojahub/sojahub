@@ -7,8 +7,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/x/ledger/types"
-	relayertypes "github.com/stafihub/stafihub/x/relayers/types"
+	"github.com/sojahub/sojahub/x/ledger/types"
+	relayertypes "github.com/sojahub/sojahub/x/relayers/types"
 )
 
 type msgServer struct {
